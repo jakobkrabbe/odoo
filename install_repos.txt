@@ -1,3 +1,56 @@
+#!/bin/bash
+
 # Git install.
 # Make it as a bash-file!
 # bash install.bs
+
+
+
+sudo rm /usr/share/odoo-project_scrum
+git clone git@github.com:vertelab/odoo-project_scrum.git
+
+sudo rm /usr/share/odoo-product
+git clone git@github.com:vertelab/odoo-product.git
+
+sudo rm /usr/share/odoo-website
+git clone git@github.com:vertelab/odoo-website.git
+
+sudo rm /usr/share/odoo-website-sal
+git clone git@github.com:vertelab/odoo-website-sale.git
+
+sudo rm /usr/share/odoo-hr
+git clone git@github.com:vertelab/odoo-hr.git
+
+sudo rm /usr/share/odoo-gdpr
+git clone git@github.com:vertelab/odoo-gdpr.git
+
+sudo rm /usr/share/odoo-stock
+git clone git@github.com:vertelab/odoo-stock.git
+
+sudo rm /usr/share/odoo-edi
+git clone git@github.com:vertelab/odoo-edi.git
+
+sudo rm /usr/share/odoo-user-mail
+git clone git@github.com:vertelab/odoo-user-mail.git
+
+sudo rm /usr/share/odoo-event
+git clone git@github.com:vertelab/odoo-event.git
+
+sudo rm /usr/share/odoo-edi
+git clone git@github.com:vertelab/odoo-edi.git
+
+sudo rm /usr/share/odoo-crm
+git clone git@github.com:vertelab/odoo-crm.git
+
+sudo rm /usr/share/odoo-account
+git clone git@github.com:vertelab/odoo-account.git
+
+sudo rm /usr/share/odoo-commerce-pgw
+git clone git@github.com:vertelab/odoo-commerce-pgw.git
+
+sudo rm /usr/share/odoo-l10n_se
+git clone git@github.com:vertelab/odoo-l10n_se.git
+
+sudo rm /usr/share/odoo-membership
+git clone git@github.com:vertelab/odoo-membership.git
+
