@@ -1,0 +1,3 @@
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
