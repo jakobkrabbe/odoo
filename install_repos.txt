@@ -7,7 +7,6 @@
 1. sudo -s
 
 2. Private repos:
-git@git.vertel.se:vertelab/odoo-customer-addons.git
 sudo rm /usr/share/odoo-customer-addons -R
 git clone -b 12.0 git@github.com:vertelab/odoo-customer-addons.git
 sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
