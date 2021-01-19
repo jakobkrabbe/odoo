@@ -28,6 +28,10 @@ sudo rm /usr/share/odoo-product -R
 git clone -b 12.0 git@github.com:vertelab/odoo-product.git
 sudo mv odoo-product /usr/share/odoo-product
 
+sudo rm /usr/share/odoo-web -R
+git clone -b 12.0 git@github.com:vertelab/web.git
+sudo mv web /usr/share/odoo-web
+
 sudo rm /usr/share/odoo-website -R
 git clone -b 12.0 git@github.com:vertelab/odoo-website.git
 sudo mv odoo-website /usr/share/odoo-website
