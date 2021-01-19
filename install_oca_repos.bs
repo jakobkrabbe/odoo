@@ -11,6 +11,13 @@ sudo rm /usr/share/odooext-oca-social -R
 git clone -b 12.0 git@github.com:OCA/social.git
 sudo mv social /usr/share/odooext-oca-social
 
+sudo rm /usr/share/odooext-oca-crm -R
+git clone -b 12.0 git@github.com:OCA/crm.git
+sudo mv crm /usr/share/odooext-oca-crm
+
+sudo rm /usr/share/odooext-oca-timesheet -R
+git clone -b 12.0 git@github.com:OCA/timesheet.git
+sudo mv timesheet /usr/share/odooext-oca-timesheet
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
