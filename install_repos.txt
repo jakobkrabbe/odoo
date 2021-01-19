@@ -41,9 +41,13 @@ sudo rm /usr/share/odoo-website -R
 git clone -b 12.0 git@github.com:vertelab/odoo-website.git
 sudo mv odoo-website /usr/share/odoo-website
 
-sudo rm /usr/share/odoo-website-sal -R
+sudo rm /usr/share/odoo-website-sale -R
 git clone -b 12.0 git@github.com:vertelab/odoo-website-sale.git
-sudo mv odoo-sal /usr/share/odoo-sal
+sudo mv odoo-sale /usr/share/odoo-sale
+
+sudo rm /usr/share/odoo-website-sale-extra -R
+git clone -b 12.0 git@github.com:vertelab/odoo-website-sale-extra.git
+sudo mv odoo-website-sale-extra /usr/share/odoo-website-sale
 
 sudo rm /usr/share/odoo-hr -R
 git clone -b 12.0 git@github.com:vertelab/odoo-hr.git
@@ -95,4 +99,5 @@ sudo mv odoo-membership /usr/share/odoo-membership
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
-odooaddons
+echo odooaddons
+echo odoorestart ; odootail
