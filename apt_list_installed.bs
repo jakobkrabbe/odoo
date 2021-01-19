@@ -1,6 +1,12 @@
-
 #!/bin/bash
 
 while IFS= read -r line; do
-    echo "Text read from file: $line"
+    echo "install..: $line"
+    # Do the work...
+    IFS='/' read -ra PIP3_INSTALL <<< "$line"
+
+    # Install the dependency, the first name in line
+    echo "installing... ${PIP3_INSTALL[0]}"
+    sudo pip3 install -r ${PIP3_INSTALL[0]}
+
 done < apt_list.txt
