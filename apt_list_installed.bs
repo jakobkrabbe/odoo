@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Purpose: To copy a server and also copy all installed APT's
+# $ list apt --installed > apt_list.txt
+
 while IFS= read -r line; do
     echo "install..: $line"
     # Do the work...
