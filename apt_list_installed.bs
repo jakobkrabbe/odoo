@@ -3,6 +3,25 @@
 # Purpose: To copy a server and also copy all installed APT's
 # $ list apt --installed > apt_list.txt
 
+
+while IFS= read -r line; do
+    echo "Text read from file: $line"
+    IFS='/' read -r -a array <<< "$line"
+        echo "${array[0]}"
+        sudo pip3 install ${array[0]}
+#done < test_install.txt
+done < apt_list.txt
+
+
+* * * * * * * * * * * * * * * * * * *
+# Plan B:
+
+
+#!/bin/bash
+
+# Purpose: To copy a server and also copy all installed APT's
+# $ list apt --installed > apt_list.txt
+
 while IFS= read -r line; do
     echo "install..: $line"
     # Do the work...
@@ -13,3 +32,4 @@ while IFS= read -r line; do
     sudo pip3 install -r ${PIP3_INSTALL[0]}
 
 done < apt_list.txt
+
