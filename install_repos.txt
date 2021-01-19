@@ -11,6 +11,11 @@ sudo rm /usr/share/odoo-customer-addons -R
 git clone -b 12.0 git@git.vertel.se:vertelab/odoo-customer-addons.git
 sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 
+sudo rm /usr/share/odooext-addons-onestein -R
+git clone -b 12.0 git@github.com:onesteinbv/addons-onestein.git
+sudo mv addons-onestein /usr/share/odooext-addons-onestein
+
+
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
