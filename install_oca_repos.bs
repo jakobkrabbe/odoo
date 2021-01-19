@@ -1,4 +1,17 @@
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+# 1. sudo -s
+
+# 2. Private repos:
+sudo rm /usr/share/odooext-oca-social -R
+git clone -b 12.0 git@github.com:OCA/social.git
+sudo mv social /usr/share/odooext-oca-social
 
 
-
-git@github.com:OCA/social.git
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo odooaddons
