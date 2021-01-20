@@ -30,4 +30,5 @@ sudo mv odoo-customer-addons /usr/share/odooext-customer-addons
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
 echo odooaddons
-echo ooorestart ; odootail
+echo ooorestart
+echo odootail
