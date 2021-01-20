@@ -25,7 +25,10 @@ sudo mv odoo-customer-addons /usr/share/odooext-customer-addons
 # odooext-office365-techloyce
 # odooext-pledra-product-configurator
 
-
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
