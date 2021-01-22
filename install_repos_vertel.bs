@@ -19,6 +19,7 @@ sudo mv odoo-base /usr/share/odoo-base
 git clone -b 10.0 git@github.com:vertelab/odoo-calendar.git
 sudo rm /usr/share/odoo-calendar -R
 sudo mv odoo-calendar /usr/share/odoo-calendar
+pip install icalendar
 
 git clone -b 10.0 git@github.com:vertelab/odoo-crm.git
 sudo rm /usr/share/odoo-crm -R
@@ -36,9 +37,13 @@ git clone -b 10.0 git@github.com:vertelab/odoo-hr.git
 sudo rm /usr/share/odoo-hr -R
 sudo mv odoo-hr /usr/share/odoo-hr
 
-#git clone -b 10.0 git@github.com:vertelab/odoo-imagemagick.git
+
+git clone -b 10.0 git@github.com:vertelab/odoo-imagemagick.git
 sudo rm /usr/share/odoo-imagemagick -R
-#sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
+sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
+sudo apt-get install libmagickwand-dev
+sudo pip install Wand
+sudo apt-get install python-wand
 
 git clone -b 10.0 git@github.com:vertelab/odoo-knowledge-extra.git
 sudo rm /usr/share/odoo-knowledge-extra -R
