@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+# git remote show origin
+
+#odooext-account-analytic
+#git@github.com:OCA/account-analytic.git
+
+#odooext-booking
+#- Not a git repository
+
+#odooext-cevt-addons10
+#. git.vertel.se N/A!!
+
+#odooext-CybroOdooCybroAddons
+#https://github.com/CybroOdoo/CybroAddons.git
+
+#odooext-kempff
+#odooext-krdistribution
+
+
+
+
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo odooaddons
+echo odoorestart
+echo odootail
