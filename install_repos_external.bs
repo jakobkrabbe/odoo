@@ -6,6 +6,7 @@
 
 # git remote show origin
 
+#odoocore
 #odooext-account-analytic
 #git@github.com:OCA/account-analytic.git
 
