@@ -4,29 +4,111 @@
 # Make it as a bash-file!
 # bash install.bs
 
-odoo-account
-odoo-account-extra
-odoo-base
-odoo-calendar
-odoo-crm
-odoo-customer-addons
-odoo-delivery
+git clone -b 10.0 git@github.com:vertelab/odoo-account.git
+sudo rm /usr/share/odoo-account -R
+sudo mv odoo-account /usr/share/odoo-account
 
-odoo-hr
-odoo-imagemagick
-odoo-knowledge-extra
-odoo-l10n_se
-odoo-l10n_se_payroll
-odoo-marketing
-odoo-payroll
-odoo-pos
-odoo-report
-odoo-sale
-odoo-stock
-odoo-survey
-odoo-theme
-odoo-user-mail
-odoo-website
-odoo-website-quote
-odoo-website-sale
+git clone -b 10.0 git@github.com:vertelab/odoo-account-extra.git
+sudo rm /usr/share/odoo-account-extra -R
+sudo mv odoo-account-extra /usr/share/odoo-account-extra
 
+git clone -b 10.0 git@github.com:vertelab/odoo-base.git
+sudo rm /usr/share/odoo-base -R
+sudo mv odoo-base /usr/share/odoo-base
+
+git clone -b 10.0 git@github.com:vertelab/odoo-calendar.git
+sudo rm /usr/share/odoo-calendar -R
+sudo mv odoo-calendar /usr/share/odoo-calendar
+
+git clone -b 10.0 git@github.com:vertelab/odoo-crm.git
+sudo rm /usr/share/odoo-crm -R
+sudo mv odoo-crm /usr/share/odoo-crm
+
+git clone -b 10.0 git@github.com:vertelab/odoo-customer-addons.git
+sudo rm /usr/share/odoo-customer-addons -R
+sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
+
+git clone -b 10.0 git@github.com:vertelab/odoo-delivery.git
+sudo rm /usr/share/odoo-delivery -R
+sudo mv odoo-delivery /usr/share/odoo-delivery
+
+git clone -b 10.0 git@github.com:vertelab/odoo-hr.git
+sudo rm /usr/share/odoo-hr -R
+sudo mv odoo-hr /usr/share/odoo-hr
+
+git clone -b 10.0 git@github.com:vertelab/odoo-imagemagick.git
+sudo rm /usr/share/odoo-imagemagick -R
+sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
+
+git clone -b 10.0 git@github.com:vertelab/odoo-knowledge-extra.git
+sudo rm /usr/share/odoo-knowledge-extra -R
+sudo mv odoo-knowledge-extra /usr/share/odoo-knowledge-extra
+
+git clone -b 10.0 git@github.com:vertelab/odoo-l10n_se.git
+sudo rm /usr/share/odoo-l10n_se -R
+sudo mv odoo-l10n_se /usr/share/odoo-l10n_se
+
+git clone -b 10.0 git@github.com:vertelab/odoo-l10n_se_payroll.git
+sudo rm /usr/share/odoo-l10n_se_payroll -R
+sudo mv odoo-l10n_se_payroll /usr/share/odoo-l10n_se_payroll
+
+git clone -b 10.0 git@github.com:vertelab/odoo-marketing.git
+sudo rm /usr/share/odoo-marketing -R
+sudo mv odoo-marketing /usr/share/odoo-marketing
+
+git clone -b 10.0 git@github.com:vertelab/odoo-payroll.git
+sudo rm /usr/share/odoo-payroll -R
+sudo mv odoo-payroll /usr/share/odoo-payroll
+
+git clone -b 10.0 git@github.com:vertelab/odoo-pos.git
+sudo rm /usr/share/odoo-pos -R
+sudo mv odoo-pos /usr/share/odoo-pos
+
+git clone -b 10.0 git@github.com:vertelab/odoo-report.git
+sudo rm /usr/share/odoo-report -R
+sudo mv odoo-report /usr/share/odoo-report
+
+git clone -b 10.0 git@github.com:vertelab/odoo-sale.git
+sudo rm /usr/share/odoo-sale -R
+sudo mv odoo-sale /usr/share/odoo-sale
+
+git clone -b 10.0 git@github.com:vertelab/odoo-stock.git
+sudo rm /usr/share/odoo-stock -R
+sudo mv odoo-stock /usr/share/odoo-stock
+
+git clone -b 10.0 git@github.com:vertelab/odoo-survey.git
+sudo rm /usr/share/odoo-survey -R
+sudo mv odoo-survey /usr/share/odoo-survey
+
+git clone -b 10.0 git@github.com:vertelab/odoo-theme.git
+sudo rm /usr/share/odoo-theme -R
+sudo mv odoo-theme /usr/share/odoo-theme
+
+git clone -b 10.0 git@github.com:vertelab/odoo-user-mail.git
+sudo rm /usr/share/odoo-user-mail -R
+sudo mv odoo-user-mail /usr/share/odoo-user-mail
+
+git clone -b 10.0 git@github.com:vertelab/odoo-website.git
+sudo rm /usr/share/odoo-website -R
+sudo mv odoo-website /usr/share/odoo-website
+
+git clone -b 10.0 git@github.com:vertelab/odoo-website-quote.git
+sudo rm /usr/share/odoo-website-quote -R
+sudo mv odoo-website-quote /usr/share/odoo-website-quote
+
+git clone -b 10.0 git@github.com:vertelab/odoo-sale.git
+sudo rm /usr/share/odoo-sale -R
+sudo mv odoo-sale /usr/share/odoo-sale
+
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo odooaddons
+echo odoorestart
+echo odootail
