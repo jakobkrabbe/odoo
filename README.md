@@ -5,4 +5,4 @@ wget -O- https://raw.githubusercontent.com/vertelab/odootools/master/install | b
 
 Paste in Terminal:<br>
 Vertel AB<br>
-wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/edit/10.0/install_repos_vertel.bs 
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/blob/10.0/install_repos_vertel.bs
