@@ -9,4 +9,4 @@ Vertel AB<br>
 wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/blob/10.0/install_repos_vertel.bs
 
 <br>
-wget https://raw.githubusercontent.com/jakobkrabbe/syscare/12.0/install_repos_vertel.bs
+wget https://raw.githubusercontent.com/jakobkrabbe/syscare/12.0/install_repos_vertel.bs | bash
