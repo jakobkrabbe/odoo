@@ -68,7 +68,7 @@ sudo mv web /usr/share/odooext-OCA-web
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
 do 
-	sudo pip3 install -r $req
+	sudo pip install -r $req
 done
 
 
