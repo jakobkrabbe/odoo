@@ -11,9 +11,9 @@ sudo rm /usr/share/odooext-OCA-bank-payment -R
 sudo mv bank-payment /usr/share/odooext-OCA-bank-payment
 
 #odooext-oca-bank-statement-import
-git clone -b 10.0 git@github.com:OCA/bank-payment-import.git
-sudo rm /usr/share/odooext-OCA-bank-payment-import -R
-sudo mv bank-payment-import /usr/share/odooext-OCA-bank-payment-import
+git clone -b 10.0 git@github.com:OCA/bank-statement-import.git
+sudo rm /usr/share/odooext-OCA-bank-statement-import -R
+sudo mv bank-statement-import /usr/share/odooext-OCA-bank-statement-import
 
 #odooext-oca-contract
 git clone -b 10.0 git@github.com:OCA/contract.git
@@ -25,10 +25,10 @@ git clone -b 10.0 git@github.com:OCA/crm.git
 sudo rm /usr/share/odooext-OCA-crm -R
 sudo mv crm /usr/share/odooext-OCA-crm
 
-#odooext-oca-ecommerce
-git clone -b 10.0 git@github.com:OCA/ecommerce.git
-sudo rm /usr/share/odooext-OCA-ecommerce -R
-sudo mv ecommerce /usr/share/odooext-OCA-ecommerce
+#odooext-oca-e-commerce
+git clone -b 10.0 git@github.com:OCA/e-commerce.git
+sudo rm /usr/share/odooext-OCA-e-commerce -R
+sudo mv e-commerce /usr/share/odooext-OCA-e-commerce
 
 #odooext-OCA-mis-builder
 git clone -b 10.0 git@github.com:OCA/mis-builder.git
@@ -46,9 +46,9 @@ sudo rm /usr/share/odooext-OCA-product-variant -R
 sudo mv product-variant /usr/share/odooext-OCA-product-variant
 
 #odooext-OCA-project-reporting
-git clone -b 10.0 git@github.com:OCA/reporting.git
-sudo rm /usr/share/odooext-OCA-reporting -R
-sudo mv reporting /usr/share/odooext-OCA-reporting
+git clone -b 10.0 git@github.com:OCA/project-reporting.git
+sudo rm /usr/share/odooext-OCA-project-reporting -R
+sudo mv project-reporting /usr/share/odooext-OCA-project-reporting
 
 #odooext-oca-reporting-engine
 git clone -b 10.0 git@github.com:OCA/reporting-engine.git
