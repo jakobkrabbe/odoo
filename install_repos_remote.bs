@@ -33,7 +33,7 @@ sudo rm /usr/share/odooext-addons-onestein -R
 sudo mv addons-onestein /usr/share/odooext-addons-onestein
 sudo pip install requests requests_oauthlib
 
-git clone -b 10.0 git@git.vertel.se:vertelab/odoo-customer-addons.git
+git clone -b master git@git.vertel.se:vertelab/odoo-customer-addons.git
 sudo rm /usr/share/odooext-customer-addons -R
 sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 
