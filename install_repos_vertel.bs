@@ -103,7 +103,7 @@ sudo mv odoo-sale /usr/share/odoo-sale
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
 do 
-	sudo pip3 install -r $req
+	sudo pip install -r $req
 done
 
 
