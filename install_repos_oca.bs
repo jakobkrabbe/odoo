@@ -5,42 +5,65 @@
 # Make it as a bash-file!
 # bash install.bs
 
-#odoocore
-#odooext-account-analytic
-#odooext-booking
-#odooext-cevt-addons10
-#odooext-CybroOdooCybroAddons
-#odooext-kempff
-#odooext-krdistribution
 #odooext-oca-bank-payment
+git clone -b 10.0 git@github.com:OCA/bank-payment.git
+sudo rm /usr/share/odooext-OCA-bank-payment -R
+sudo mv bank-payment /usr/share/odooext-OCA-bank-payment
+
 #odooext-oca-bank-statement-import
+git clone -b 10.0 git@github.com:OCA/bank-payment-import.git
+sudo rm /usr/share/odooext-OCA-bank-payment-import -R
+sudo mv bank-payment-import /usr/share/odooext-OCA-bank-payment-import
+
 #odooext-oca-contract
+git clone -b 10.0 git@github.com:OCA/contract.git
+sudo rm /usr/share/odooext-OCA-contract -R
+sudo mv contract /usr/share/odooext-OCA-contract
+
 #odooext-oca-crm
+git clone -b 10.0 git@github.com:OCA/crm.git
+sudo rm /usr/share/odooext-OCA-crm -R
+sudo mv crm /usr/share/odooext-OCA-crm
+
 #odooext-oca-ecommerce
+git clone -b 10.0 git@github.com:OCA/ecommerce.git
+sudo rm /usr/share/odooext-OCA-ecommerce -R
+sudo mv ecommerce /usr/share/odooext-OCA-ecommerce
+
 #odooext-OCA-mis-builder
-
-
 git clone -b 10.0 git@github.com:OCA/mis-builder.git
 sudo rm /usr/share/odooext-OCA-mis-builder -R
 sudo mv mis-builder /usr/share/odooext-OCA-mis-builder
 
 #odooext-oca-product-attribute
-#odooext-oca-product-variant
-#odooext-OCA-project-reporting
-#odooext-oca-reporting-engine
-#odooext-OCA-server-tools
+git clone -b 10.0 git@github.com:OCA/product-attribute.git
+sudo rm /usr/share/odooext-OCA-product-attribute -R
+sudo mv product-attribute /usr/share/odooext-OCA-product-attribute
 
+#odooext-oca-product-variant
+git clone -b 10.0 git@github.com:OCA/product-variant.git
+sudo rm /usr/share/odooext-OCA-product-variant -R
+sudo mv product-variant /usr/share/odooext-OCA-product-variant
+
+#odooext-OCA-project-reporting
+git clone -b 10.0 git@github.com:OCA/reporting.git
+sudo rm /usr/share/odooext-OCA-reporting -R
+sudo mv reporting /usr/share/odooext-OCA-reporting
+
+#odooext-oca-reporting-engine
+git clone -b 10.0 git@github.com:OCA/reporting-engine.git
+sudo rm /usr/share/odooext-OCA-reporting-engine -R
+sudo mv reporting-engine /usr/share/odooext-OCA-reporting-engine
+
+#odooext-OCA-server-tools
 git clone -b 10.0 git@github.com:OCA/server-tools.git
 sudo rm /usr/share/odooext-OCA-server-tools -R
-sudo mv server-tools /usr/share/odooext-OCA-mis-builder
-
+sudo mv server-tools /usr/share/odooext-OCA-server-tools
 
 #odooext-oca-web
-
 git clone -b 10.0 git@github.com:OCA/web.git
 sudo rm /usr/share/odooext-OCA-web -R
 sudo mv web /usr/share/odooext-OCA-web
-
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
@@ -51,6 +74,6 @@ done
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
-echo odooaddons
-echo odoorestart
-echo odootail
+odooaddons
+odoorestart
+odootail
