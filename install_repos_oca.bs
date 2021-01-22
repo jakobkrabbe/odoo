@@ -29,8 +29,17 @@ sudo mv mis-builder /usr/share/odooext-OCA-mis-builder
 #odooext-OCA-project-reporting
 #odooext-oca-reporting-engine
 #odooext-OCA-server-tools
+
+git clone -b 10.0 git@github.com:OCA/server-tools.git
+sudo rm /usr/share/odooext-OCA-server-tools -R
+sudo mv server-tools /usr/share/odooext-OCA-mis-builder
+
+
 #odooext-oca-web
 
+git clone -b 10.0 git@github.com:OCA/web.git
+sudo rm /usr/share/odooext-OCA-web -R
+sudo mv web /usr/share/odooext-OCA-web
 
 
 # pip install...
