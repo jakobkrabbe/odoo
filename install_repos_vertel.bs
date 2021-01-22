@@ -37,7 +37,6 @@ git clone -b 10.0 git@github.com:vertelab/odoo-hr.git
 sudo rm /usr/share/odoo-hr -R
 sudo mv odoo-hr /usr/share/odoo-hr
 
-
 git clone -b 10.0 git@github.com:vertelab/odoo-imagemagick.git
 sudo rm /usr/share/odoo-imagemagick -R
 sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
@@ -89,7 +88,7 @@ git clone -b 10.0 git@github.com:vertelab/odoo-theme.git
 sudo rm /usr/share/odoo-theme -R
 sudo mv odoo-theme /usr/share/odoo-theme
 
-git clone -b 10.0 git@github.com:vertelab/odoo-user-mail.git
+git clone -b master10 git@github.com:vertelab/odoo-user-mail.git
 sudo rm /usr/share/odoo-user-mail -R
 sudo mv odoo-user-mail /usr/share/odoo-user-mail
 
