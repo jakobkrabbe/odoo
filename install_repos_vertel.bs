@@ -1,29 +1,17 @@
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
 odoo-account
 odoo-account-extra
 odoo-base
 odoo-calendar
-odoocore
 odoo-crm
 odoo-customer-addons
 odoo-delivery
-odooext-account-analytic
-odooext-booking
-odooext-cevt-addons10
-odooext-CybroOdooCybroAddons
-odooext-kempff
-odooext-krdistribution
-odooext-oca-bank-payment
-odooext-oca-bank-statement-import
-odooext-oca-contract
-odooext-oca-crm
-odooext-oca-ecommerce
-odooext-OCA-mis-builder
-odooext-oca-product-attribute
-odooext-oca-product-variant
-odooext-OCA-project-reporting
-odooext-oca-reporting-engine
-odooext-OCA-server-tools
-odooext-oca-web
+
 odoo-hr
 odoo-imagemagick
 odoo-knowledge-extra
@@ -41,3 +29,4 @@ odoo-user-mail
 odoo-website
 odoo-website-quote
 odoo-website-sale
+
