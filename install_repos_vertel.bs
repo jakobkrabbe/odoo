@@ -46,7 +46,7 @@ sudo apt-get install libmagickwand-dev
 sudo pip install Wand
 sudo apt-get install python-wand
 
-git clone -b 10.0 git@github.com:vertelab/odoo-knowledge-extra.git
+git clone -b master10 git@github.com:vertelab/odoo-knowledge-extra.git
 sudo rm /usr/share/odoo-knowledge-extra -R
 sudo mv odoo-knowledge-extra /usr/share/odoo-knowledge-extra
 
@@ -70,7 +70,7 @@ git clone -b master10 git@github.com:vertelab/odoo-pos.git
 sudo rm /usr/share/odoo-pos -R
 sudo mv odoo-pos /usr/share/odoo-pos
 
-git clone -b 10.0 git@github.com:vertelab/odoo-report.git
+git clone -b master10 git@github.com:vertelab/odoo-report.git
 sudo rm /usr/share/odoo-report -R
 sudo mv odoo-report /usr/share/odoo-report
 
