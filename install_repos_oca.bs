@@ -65,6 +65,10 @@ git clone -b 10.0 git@github.com:OCA/web.git
 sudo rm /usr/share/odooext-OCA-web -R
 sudo mv web /usr/share/odooext-OCA-web
 
+# pip install...
+sudo pip install qrcode
+sudo pip install bcrypt
+
 
 # pip install...
 # "How To Uninstall python-cryptography on vivid"
