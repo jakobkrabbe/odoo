@@ -16,10 +16,11 @@ git clone -b 10.0 git@github.com:vertelab/odoo-base.git
 sudo rm /usr/share/odoo-base -R
 sudo mv odoo-base /usr/share/odoo-base
 
-git clone -b 10.0 git@github.com:vertelab/odoo-calendar.git
-sudo rm /usr/share/odoo-calendar -R
-sudo mv odoo-calendar /usr/share/odoo-calendar
-pip install icalendar
+# UserError: ('icalendar library missing, pip install icalendar', '')
+#git clone -b 10.0 git@github.com:vertelab/odoo-calendar.git
+#sudo rm /usr/share/odoo-calendar -R
+#sudo mv odoo-calendar /usr/share/odoo-calendar
+#pip install icalendar
 
 git clone -b master10 git@github.com:vertelab/odoo-crm.git
 sudo rm /usr/share/odoo-crm -R
@@ -110,7 +111,9 @@ sudo mv odoo-website-sale /usr/share/odoo-website-sale
 
 
 # IMAGE MAGICK
-sudo pip install http
+#sudo pip install http
+
+#pip install icalendar
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
