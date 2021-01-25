@@ -4,29 +4,29 @@
 # Make it as a bash-file!
 # bash install.bs
 
-sudo rm /usr/share/odooext-oca-crm -R
 git clone -b 12.0 git@github.com:OCA/crm.git
+sudo rm /usr/share/odooext-oca-crm -R
 sudo mv crm /usr/share/odooext-oca-crm
 
-sudo rm /usr/share/odooext-oca-helpdesk -R
 git clone -b 12.0 git@github.com:OCA/helpdesk.git
+sudo rm /usr/share/odooext-oca-helpdesk -R
 sudo mv helpdesk /usr/share/odooext-oca-helpdesk
 
-sudo rm /usr/share/odooext-oca-project -R
 git clone -b 12.0 git@github.com:OCA/project.git
+sudo rm /usr/share/odooext-oca-project -R
 sudo mv project /usr/share/odooext-oca-project
 
-odooext-oca-server-tools
-sudo rm /usr/share/odooext-oca-server-tools -R
+# odooext-oca-server-tools
 git clone -b 12.0 git@github.com:OCA/server-tools.git
+sudo rm /usr/share/odooext-oca-server-tools -R
 sudo mv server-tools /usr/share/odooext-oca-server-tools
 
-sudo rm /usr/share/odooext-oca-social -R
 git clone -b 12.0 git@github.com:OCA/social.git
+sudo rm /usr/share/odooext-oca-social -R
 sudo mv social /usr/share/odooext-oca-social
 
-sudo rm /usr/share/odooext-oca-timesheet -R
 git clone -b 12.0 git@github.com:OCA/timesheet.git
+sudo rm /usr/share/odooext-oca-timesheet -R
 sudo mv timesheet /usr/share/odooext-oca-timesheet
 
 sudo rm /usr/share/odooext-oca-web -R
@@ -36,6 +36,9 @@ sudo mv web /usr/share/odooext-oca-web
 sudo rm /usr/share/odooext-oca-website -R
 git clone -b 12.0 git@github.com:OCA/website.git
 sudo mv website /usr/share/odooext-oca-website
+
+
+sudo pip3 install phonenumbers
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
