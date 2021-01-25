@@ -92,17 +92,17 @@ git clone -b master10 git@github.com:vertelab/odoo-user-mail.git
 sudo rm /usr/share/odoo-user-mail -R
 sudo mv odoo-user-mail /usr/share/odoo-user-mail
 
-#git clone -b 10.0 git@github.com:vertelab/odoo-website.git
-#sudo rm /usr/share/odoo-website -R
-#sudo mv odoo-website /usr/share/odoo-website
+git clone -b 10.0 git@github.com:vertelab/odoo-website.git
+sudo rm /usr/share/odoo-website -R
+sudo mv odoo-website /usr/share/odoo-website
 
 git clone -b 10.0 git@github.com:vertelab/odoo-website-quote.git
 sudo rm /usr/share/odoo-website-quote -R
 sudo mv odoo-website-quote /usr/share/odoo-website-quote
 
-git clone -b 10.0 git@github.com:vertelab/odoo-sale.git
-sudo rm /usr/share/odoo-sale -R
-sudo mv odoo-sale /usr/share/odoo-sale
+git clone -b 10.0 git@github.com:vertelab/odoo-website-sale.git
+sudo rm /usr/share/odoo-website-sale -R
+sudo mv odoo-website-sale /usr/share/odoo-website-sale
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
