@@ -29,18 +29,27 @@ git clone -b 12.0 git@github.com:OCA/timesheet.git
 sudo rm /usr/share/odooext-oca-timesheet -R
 sudo mv timesheet /usr/share/odooext-oca-timesheet
 
-sudo rm /usr/share/odooext-oca-web -R
 git clone -b 12.0 git@github.com:OCA/web.git
+sudo rm /usr/share/odooext-oca-web -R
 sudo mv web /usr/share/odooext-oca-web
 
-sudo rm /usr/share/odooext-oca-website -R
 git clone -b 12.0 git@github.com:OCA/website.git
+sudo rm /usr/share/odooext-oca-website -R
 sudo mv website /usr/share/odooext-oca-website
 
 
 sudo pip3 install phonenumbers
 
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+sudo python -m easy_install --upgrade pyOpenSSL
+
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
-echo odooaddons
-echo odoorestart ; odootail
+$(odooaddons)
+$(odoorestart)
+$(odootail)
