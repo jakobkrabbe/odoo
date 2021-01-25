@@ -67,10 +67,13 @@ sudo mv web /usr/share/odooext-OCA-web
 
 
 # pip install...
-for req in `ls /usr/share/odoo*/requirements.txt`
-do 
-	sudo pip install -r $req
-done
+# "How To Uninstall python-cryptography on vivid"
+# > https://installlion.com/ubuntu/vivid/main/p/python-cryptography/uninstall/index.html
+# NOT COMPATIBLE WITH CRYPTOGRAPHY !! DO NOT USE INSTALLER-LOOP !!
+#for req in `ls /usr/share/odoo*/requirements.txt`
+#do 
+#	sudo pip install -r $req
+#done
 
 sudo python -m easy_install --upgrade pyOpenSSL
 
