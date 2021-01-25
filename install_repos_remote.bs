@@ -6,24 +6,6 @@
 
 # git remote show origin
 
-#odoocore
-#odooext-account-analytic
-#git@github.com:OCA/account-analytic.git
-
-#odooext-booking
-#- Not a git repository
-
-#odooext-cevt-addons10
-#. git.vertel.se N/A!!
-
-#odooext-CybroOdooCybroAddons
-#https://github.com/CybroOdoo/CybroAddons.git
-
-#odooext-kempff
-#odooext-krdistribution
-
-# git remote show origin
-
 git clone -b 10.0 git@github.com:CybroOdoo/OpenHRMS.git
 sudo rm /usr/share/odooext-CybroOdoo-OpenHRMS -R
 sudo mv OpenHRMS /usr/share/odooext-CybroOdoo-OpenHRMS
@@ -41,8 +23,6 @@ sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 # odooext-jitsi_meet
 # odooext-office365-techloyce
 # odooext-pledra-product-configurator
-
-
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
