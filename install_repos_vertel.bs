@@ -4,7 +4,7 @@
 # Make it as a bash-file!
 # bash install.bs
 
-git clone -b 10.0 git@github.com:vertelab/odoo-account.git
+git clone -b master10 git@github.com:vertelab/odoo-account.git
 sudo rm /usr/share/odoo-account -R
 sudo mv odoo-account /usr/share/odoo-account
 
@@ -21,7 +21,7 @@ sudo rm /usr/share/odoo-calendar -R
 sudo mv odoo-calendar /usr/share/odoo-calendar
 pip install icalendar
 
-git clone -b 10.0 git@github.com:vertelab/odoo-crm.git
+git clone -b master10 git@github.com:vertelab/odoo-crm.git
 sudo rm /usr/share/odoo-crm -R
 sudo mv odoo-crm /usr/share/odoo-crm
 
@@ -29,10 +29,11 @@ git clone -b 10.0 git@github.com:vertelab/odoo-customer-addons.git
 sudo rm /usr/share/odoo-customer-addons -R
 sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 
-git clone -b 10.0 git@github.com:vertelab/odoo-delivery.git
+git clone -b master10 git@github.com:vertelab/odoo-delivery.git
 sudo rm /usr/share/odoo-delivery -R
 sudo mv odoo-delivery /usr/share/odoo-delivery
 
+# * * * * * * * * * * * * * * * * * * * * * * 
 git clone -b 10.0 git@github.com:vertelab/odoo-hr.git
 sudo rm /usr/share/odoo-hr -R
 sudo mv odoo-hr /usr/share/odoo-hr
@@ -56,7 +57,7 @@ git clone -b 10.0 git@github.com:vertelab/odoo-l10n_se_payroll.git
 sudo rm /usr/share/odoo-l10n_se_payroll -R
 sudo mv odoo-l10n_se_payroll /usr/share/odoo-l10n_se_payroll
 
-git clone -b 10.0 git@github.com:vertelab/odoo-marketing.git
+git clone -b master10 git@github.com:vertelab/odoo-marketing.git
 sudo rm /usr/share/odoo-marketing -R
 sudo mv odoo-marketing /usr/share/odoo-marketing
 
@@ -64,7 +65,7 @@ git clone -b 10.0 git@github.com:vertelab/odoo-payroll.git
 sudo rm /usr/share/odoo-payroll -R
 sudo mv odoo-payroll /usr/share/odoo-payroll
 
-git clone -b 10.0 git@github.com:vertelab/odoo-pos.git
+git clone -b master10 git@github.com:vertelab/odoo-pos.git
 sudo rm /usr/share/odoo-pos -R
 sudo mv odoo-pos /usr/share/odoo-pos
 
@@ -76,7 +77,7 @@ git clone -b 10.0 git@github.com:vertelab/odoo-sale.git
 sudo rm /usr/share/odoo-sale -R
 sudo mv odoo-sale /usr/share/odoo-sale
 
-git clone -b 10.0 git@github.com:vertelab/odoo-stock.git
+git clone -b master10 git@github.com:vertelab/odoo-stock.git
 sudo rm /usr/share/odoo-stock -R
 sudo mv odoo-stock /usr/share/odoo-stock
 
@@ -96,13 +97,17 @@ git clone -b 10.0 git@github.com:vertelab/odoo-website.git
 sudo rm /usr/share/odoo-website -R
 sudo mv odoo-website /usr/share/odoo-website
 
-git clone -b 10.0 git@github.com:vertelab/odoo-website-quote.git
+git clone -b master10 git@github.com:vertelab/odoo-website-quote.git
 sudo rm /usr/share/odoo-website-quote -R
 sudo mv odoo-website-quote /usr/share/odoo-website-quote
 
-git clone -b 10.0 git@github.com:vertelab/odoo-website-sale.git
+git clone -b master10 git@github.com:vertelab/odoo-website-sale.git
 sudo rm /usr/share/odoo-website-sale -R
 sudo mv odoo-website-sale /usr/share/odoo-website-sale
+
+
+# IMAGE MAGICK
+sudo pip install http
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
