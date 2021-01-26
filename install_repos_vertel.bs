@@ -8,6 +8,7 @@ git clone -b 12.0 git@github.com:vertelab/odoo-account.git
 sudo rm /usr/share/odoo-account -R
 sudo mv odoo-account /usr/share/odoo-account
 
+# VERY BIG!
 #git clone -b 12.0 git@github.com:vertelab/odoo-af.git
 #sudo rm /usr/share/odoo-af -R
 #sudo mv odoo-af /usr/share/odoo-af
