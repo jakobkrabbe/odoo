@@ -1,0 +1,9 @@
+
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+git remote show origin
+git config --get remote.origin.url
