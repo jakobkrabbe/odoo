@@ -1,4 +1,16 @@
 # syscare
 My Odoo files and notes
 
-Look in every branch, to download projects.
+Paste in Terminal:<br>
+Vertel AB<br>
+<br>
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/13.0/install_repos_vertel.bs | bash
+
+OCA repos<br>
+<br>
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/13.0/install_repos_oca.bs | bash
+
+
+External repos<br>
+<br>
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/13.0/install_repos_remote.bs | bash
