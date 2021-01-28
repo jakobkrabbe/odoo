@@ -1,1 +1,23 @@
-hello!
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+# git remote show origin
+
+git clone -b master git@git.vertel.se:vertelab/odoo-customer-addons.git
+sudo rm /usr/share/odooext-customer-addons -R
+sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
+
+# pip install...
+#for req in `ls /usr/share/odoo*/requirements.txt`
+#do 
+#	sudo pip install -r $req
+#done
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+odooaddons
+odoorestart
+odootail
