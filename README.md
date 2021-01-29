@@ -7,7 +7,7 @@ Vertel AB ** Public<br>
 wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/12.0/install_repos_vertel_public.bs | bash <br>
 
 <br>
-Vertel AB ** Private (require a valid account at server git.vertel.se .)<br>
+Vertel AB ** Private (require valid SSH keys at git.vertel.se .)<br>
 <br>
 wget -O- https://raw.githubusercontent.com/jakobkrabbe/syscare/12.0/install_repos_vertel_private.bs | bash <br>
 
