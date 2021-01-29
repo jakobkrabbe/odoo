@@ -16,10 +16,6 @@ git clone -b 12.0 git@github.com:onesteinbv/addons-onestein.git
 sudo mv addons-onestein /usr/share/odooext-addons-onestein
 sudo pip3 install requests requests_oauthlib
 
-sudo rm /usr/share/odooext-customer-addons -R
-git clone -b 12.0 git@git.vertel.se:vertelab/odoo-customer-addons.git
-sudo mv odoo-customer-addons /usr/share/odooext-customer-addons
-
 # odooext-ingadhoc-survey
 # odooext-jitsi_meet
 # odooext-office365-techloyce
