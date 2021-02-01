@@ -1,10 +1,93 @@
-odoo-account
-odoo-appointment
-odoo-auth
-odoo-base
-odoo-community-data-files
-odoo-crm
-odoo-delivery
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+git clone -b 12.0 git@github.com:vertelab/odoo-account.git
+sudo rm /usr/share/odoo-account -R
+sudo mv odoo-account /usr/share/odoo-account
+
+git clone -b 12.0 git@github.com:vertelab/odoo-appointment.git
+sudo rm /usr/share/odoo-appointment -R
+sudo mv odoo-appointment /usr/share/odoo-appointment
+
+git clone -b 12.0 git@github.com:vertelab/odoo-auth.git
+sudo rm /usr/share/odoo-auth -R
+sudo mv odoo-auth /usr/share/odoo-auth
+
+# odoo-base
+git clone -b 12.0 git@github.com:vertelab/odoo-base.git
+sudo rm /usr/share/odoo-base -R
+sudo mv odoo-base /usr/share/odoo-base
+
+# odoo-community-data-files
+git clone -b 12.0 git@github.com:vertelab/odoo-community-data-files.git
+sudo rm /usr/share/odoo-community-data-files -R
+sudo mv odoo-community-data-files /usr/share/odoo-community-data-files
+
+# odoo-crm
+git clone -b 12.0 git@github.com:vertelab/odoo-crm.git
+sudo rm /usr/share/odoo-crm -R
+sudo mv odoo-crm /usr/share/odoo-crm
+
+# odoo-delivery
+git clone -b 12.0 git@github.com:vertelab/odoo-delivery.git
+sudo rm /usr/share/odoo-delivery -R
+sudo mv odoo-delivery /usr/share/odoo-delivery
+
+# odoo-imagemagick
+git clone -b 12.0 git@github.com:vertelab/odoo-imagemagick.git
+sudo rm /usr/share/odoo-imagemagick -R
+sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
+
+# odoo-l10n_se
+git clone -b 12.0 git@github.com:vertelab/odoo-l10n_se.git
+sudo rm /usr/share/odoo-l10n_se -R
+sudo mv odoo-l10n_se /usr/share/odoo-l10n_se
+
+#odoo-oca-edi
+
+# odoo-sale
+git clone -b 12.0 git@github.com:vertelab/odoo-sale.git
+sudo rm /usr/share/odoo-sale -R
+sudo mv odoo-sale /usr/share/odoo-sale
+
+#odoo-server-tools
+git clone -b 12.0 git@github.com:vertelab/odoo-server-tools.git
+sudo rm /usr/share/odoo-server-tools -R
+sudo mv odoo-server-tools /usr/share/odoo-server-tools
+
+# odoo-user-mail
+git clone -b 12.0 git@github.com:vertelab/odoo-mail.git
+sudo rm /usr/share/odoo-mail -R
+sudo mv odoo-mail /usr/share/odoo-mail
+
+# odoo-website-blog
+git clone -b 12.0 git@github.com:vertelab/odoo-website-blog.git
+sudo rm /usr/share/odoo-website-blog -R
+sudo mv odoo-website-blog /usr/share/odoo-website-blog
+
+# odoo-website-quote
+git clone -b 12.0 git@github.com:vertelab/odoo-website-quote.git
+sudo rm /usr/share/odoo-website-quote -R
+sudo mv odoo-website-quote /usr/share/odoo-website-quote
+
+# odoo-website-sale-extra
+git clone -b 12.0 git@github.com:vertelab/odoo-website-sale-extra.git
+sudo rm /usr/share/odoo-website-sale-extra -R
+sudo mv odoo-website-sale-extra /usr/share/odoo-website-sale-extra
+
+# * * * * * * * * * * * *
+
+
+odooext-odoo-enterprise
+odooext-office365-techloyce
+odooext-pledra-odoo-product-configurator
+odooext-themes
+odooext-theodooguy
+odooext-Vauxoo-addons-vauxoo
+odooext-Vauxoo-fb-connector
 odooext-addons-onestein
 odooext-app-odoo
 odooext-codup-odoo-crane
@@ -26,6 +109,10 @@ odooext-muk-it-muk_misc
 odooext-muk-it-muk_quality
 odooext-muk-it-muk_web
 odooext-muk-it-muk_website
+
+
+# * * * * * * * * * * * *
+
 odooext-OCA-account-analytic
 odooext-OCA-account-budgeting
 odooext-OCA-account-closing
@@ -111,19 +198,18 @@ odooext-OCA-website
 odooext-OCA-website-cms
 odooext-OCA-website-themes
 odooext-OCA-wms
-odooext-odoo-enterprise
-odooext-office365-techloyce
-odooext-pledra-odoo-product-configurator
-odooext-themes
-odooext-theodooguy
-odooext-Vauxoo-addons-vauxoo
-odooext-Vauxoo-fb-connector
-odoo-imagemagick
-odoo-l10n_se
-odoo-oca-edi
-odoo-sale
-odoo-server-tools
-odoo-user-mail
-odoo-website-blog
-odoo-website-quote
-odoo-website-sale-extra
+
+# * * * * * * * * * * * *
+
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo odooaddons
+echo odoorestart
+echo odootail
+
