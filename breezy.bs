@@ -1,125 +1,128 @@
 
-odoo-base
-odoo-commerce-pgw
-odoo-crm
-odoo-customer-addons
-odoo-delivery
-odoo-dummy
-odoo-dynamaker
+#!/bin/bash
 
-odooext-themes
-odooext-Vauxoo-addons-vauxoo
-odooext-Vauxoo-fb-connector
-odoo-imagemagick
-odoo-l10n_se
-odoo-marketing
-odoo-membership
-odoo-server-tools
-odoo-stock-extra
-odoo-theme-vertel
-odoo-user-mail
-odoo-website
-odoo-website-sale-extra
-
-odooext-codup-odoo-crane
-odooext-codup-odoo-eam
-odooext-CybroOdoo-OpenHRMS
-odooext-hilarak-odoo_community_addons
-odooext-itpp-labs-access-addons
-odooext-itpp-labs-mail-addons
-odooext-itpp-labs-misc-addons
-odooext-itpp-labs-pos-addons
-odooext-itpp-labs-sync-addons
-odooext-itpp-labs-website-addons
-odooext-muk-it-muk_base
-odooext-muk-it-muk_dms
-odooext-muk-it-muk_web
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
 
 
+# odoo-base
+git clone -b 13.0 git@github.com:vertelab/odoo-base.git
+sudo rm /usr/share/odoo-base -R
+sudo mv odoo-base /usr/share/odoo-base
 
-odooext-OCA-account-analytic
-odooext-OCA-account-budgeting
-odooext-OCA-account-closing
-odooext-OCA-account-financial-report
-odooext-OCA-account-financial-tools
-odooext-OCA-account-fiscal-rule
-odooext-OCA-account-invoice-reporting
-odooext-OCA-account-invoicing
-odooext-OCA-account-payment
-odooext-OCA-account-reconcile
-odooext-OCA-bank-payment
-odooext-OCA-bank-statement-import
-odooext-OCA-brand
-odooext-OCA-business-requirement
-odooext-OCA-calendar
-odooext-OCA-commission
-odooext-OCA-connector
-odooext-OCA-connector-cmis
-odooext-OCA-connector-interfaces
-odooext-OCA-connector-telephony
-odooext-OCA-contract
-odooext-OCA-credit-control
-odooext-OCA-crm
-odooext-OCA-currency
-odooext-OCA-data-protection
-odooext-OCA-ddmrp
-odooext-OCA-delivery-carrier
-odooext-OCA-dms
-odooext-OCA-e-commerce
-odooext-OCA-edi
-odooext-OCA-event
-odooext-OCA-field-service
-odooext-OCA-fleet
-odooext-OCA-geospatial
-odooext-OCA-helpdesk
-odooext-OCA-hr
-odooext-OCA-hr-expense
-odooext-OCA-hr-holidays
-odooext-OCA-interface-github
-odooext-OCA-iot
-odooext-OCA-knowledge
-odooext-OCA-maintenance
-odooext-OCA-management-system
-odooext-OCA-manufacture
-odooext-OCA-manufacture-reporting
-odooext-OCA-margin-analysis
-odooext-OCA-mis-builder
-odooext-OCA-multi-company
-odooext-OCA-partner-contact
-odooext-OCA-payroll
-odooext-OCA-pos
-odooext-OCA-product-attribute
-odooext-OCA-product-pack
-odooext-OCA-product-variant
-odooext-OCA-project
-odooext-OCA-project-agile
-odooext-OCA-project-reporting
-odooext-OCA-purchase-workflow
-odooext-OCA-queue
-odooext-OCA-report-print-send
-odooext-OCA-rest-framework
-odooext-OCA-rma
-odooext-OCA-sale-reporting
-odooext-OCA-sale-workflow
-odooext-OCA-search-engine
-odooext-OCA-server-auth
-odooext-OCA-server-backend
-odooext-OCA-server-brand
-odooext-OCA-server-env
-odooext-OCA-server-tools
-odooext-OCA-server-ux
-odooext-OCA-social
-odooext-OCA-stock-logistics-barcode
-odooext-OCA-stock-logistics-reporting
-odooext-OCA-stock-logistics-warehouse
-odooext-OCA-stock-logistics-workflow
-odooext-OCA-storage
-odooext-OCA-survey
-odooext-OCA-timesheet
-odooext-OCA-vertical-association
-odooext-OCA-vertical-hotel
-odooext-OCA-web
-odooext-OCA-website
-odooext-OCA-website-cms
-odooext-OCA-website-themes
-odooext-OCA-wms
+# odoo-commerce-pgw
+git clone -b 13.0 git@github.com:vertelab/odoo-commerce-pgw.git
+sudo rm /usr/share/odoo-commerce-pgw -R
+sudo mv odoo-commerce-pgw /usr/share/odoo-commerce-pgw
+
+# odoo-crm
+git clone -b 13.0 git@github.com:vertelab/odoo-crm.git
+sudo rm /usr/share/odoo-crm -R
+sudo mv odoo-crm /usr/share/odoo-crm
+
+# odoo-customer-addons
+git clone -b 13.0 git@github.com:vertelab/odoo-customer-addons.git
+sudo rm /usr/share/odoo-customer-addons -R
+sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
+
+# odoo-delivery
+git clone -b 13.0 git@github.com:vertelab/odoo-delivery.git
+sudo rm /usr/share/odoo-delivery -R
+sudo mv odoo-delivery /usr/share/odoo-delivery
+
+# odoo-dummy
+git clone -b 13.0 git@github.com:vertelab/odoo-dummy.git
+sudo rm /usr/share/odoo-dummy -R
+sudo mv odoo-dummy /usr/share/odoo-dummy
+
+# odoo-dynamaker
+git clone -b 13.0 git@github.com:vertelab/odoo-dynamaker.git
+sudo rm /usr/share/odoo-dynamaker -R
+sudo mv odoo-dummy /usr/share/odoo-dynamaker
+
+# odoo-imagemagick
+git clone -b 13.0 git@github.com:vertelab/odoo-imagemagick.git
+sudo rm /usr/share/odoo-imagemagick -R
+sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
+
+# odoo-l10n_se
+git clone -b 13.0 git@github.com:vertelab/odoo-l10n_se.git
+sudo rm /usr/share/odoo-l10n_se -R
+sudo mv odoo-l10n_se /usr/share/odoo-l10n_se
+
+# odoo-mail
+git clone -b 13.0 git@github.com:vertelab/odoo-mail.git
+sudo rm /usr/share/odoo-mail -R
+sudo mv odoo-mail /usr/share/odoo-mail
+
+# odoo-marketing
+git clone -b 13.0 git@github.com:vertelab/odoo-marketing.git
+sudo rm /usr/share/odoo-marketing -R
+sudo mv odoo-marketing /usr/share/odoo-marketing
+
+# odoo-membership
+git clone -b 13.0 git@github.com:vertelab/odoo-membership.git
+sudo rm /usr/share/odoo-membership -R
+sudo mv odoo-membership /usr/share/odoo-membership
+
+# odoo-server-tools
+git clone -b 13.0 git@github.com:vertelab/odoo-sale.git
+sudo rm /usr/share/odoo-sale -R
+sudo mv odoo-sale /usr/share/odoo-sale
+
+# odoo-stock-extra
+git clone -b 13.0 git@github.com:vertelab/odoo-stock-extra.git
+sudo rm /usr/share/odoo-stock-extra -R
+sudo mv odoo-stock-extra /usr/share/odoo-stock-extra
+
+# odoo-theme-vertel
+git clone -b 13.0 git@github.com:vertelab/odoo-theme-vertel.git
+sudo rm /usr/share/odoo-theme-vertel -R
+sudo mv odoo-theme-vertel /usr/share/odoo-theme-vertel
+
+# odoo-user-mail
+git clone -b 13.0 git@github.com:vertelab/odoo-user-mail.git
+sudo rm /usr/share/odoo-user-mail -R
+sudo mv odoo-user-mail /usr/share/odoo-user-mail
+
+# odoo-website
+git clone -b 13.0 git@github.com:vertelab/odoo-website.git
+sudo rm /usr/share/odoo-website -R
+sudo mv odoo-website /usr/share/odoo-website
+
+# odoo-website-sale-extra
+git clone -b 13.0 git@github.com:vertelab/odoo-website-sale-extra.git
+sudo rm /usr/share/odoo-website-sale-extra -R
+sudo mv odoo-website-sale-extra /usr/share/odoo-website-sale-extra
+
+
+#odooext-codup-odoo-crane
+#odooext-codup-odoo-eam
+#odooext-CybroOdoo-OpenHRMS
+#odooext-hilarak-odoo_community_addons
+#odooext-itpp-labs-access-addons
+#odooext-itpp-labs-mail-addons
+#odooext-itpp-labs-misc-addons
+#odooext-itpp-labs-pos-addons
+#odooext-itpp-labs-sync-addons
+#odooext-itpp-labs-website-addons
+#odooext-muk-it-muk_base
+#odooext-muk-it-muk_dms
+#odooext-muk-it-muk_web
+
+#odooext-themes
+#odooext-Vauxoo-addons-vauxoo
+#odooext-Vauxoo-fb-connector
+
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo odooaddons
+echo odoorestart
+echo odootail
