@@ -111,6 +111,7 @@ sudo mv odoo-website-sale-extra /usr/share/odoo-website-sale-extra
 
 # pip install...
 sudo pip3 install Wand
+sudo apt-get install libmagickwand-dev
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
