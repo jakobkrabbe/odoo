@@ -1,4 +1,4 @@
-# odoo
+# odoo -- install repos
 My Odoo files and notes
 
 Paste in Terminal:<br>
