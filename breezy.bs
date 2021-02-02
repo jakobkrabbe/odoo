@@ -31,11 +31,6 @@ git clone -b 13.0 git@github.com:vertelab/odoo-delivery.git
 sudo rm /usr/share/odoo-delivery -R
 sudo mv odoo-delivery /usr/share/odoo-delivery
 
-# odoo-dummy
-git clone -b 13.0 git@github.com:vertelab/odoo-dummy.git
-sudo rm /usr/share/odoo-dummy -R
-sudo mv odoo-dummy /usr/share/odoo-dummy
-
 # odoo-dynamaker
 git clone -b 13.0 git@github.com:vertelab/odoo-dynamaker.git
 sudo rm /usr/share/odoo-dynamaker -R
