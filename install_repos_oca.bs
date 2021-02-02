@@ -13,6 +13,20 @@ git clone -b 13.0 git@github.com:OCA/account-analytic.git
 sudo rm /usr/share/odooext-OCA-account-analytic -R
 sudo mv account-analytic /usr/share/odooext-OCA-account-analytic
 
+# Declare a string array with type
+declare -a StringArray=(
+"account-budgeting"
+"account-closing"
+"financial-report" )
+ 
+# Read the array values with space
+for val in "${StringArray[@]}"; do
+    git clone -b 13.0 git@github.com:OCA/$val.git
+    sudo rm /usr/share/odooext-OCA-$val -R
+    sudo mv $val /usr/share/odooext-OCA-$val
+done
+
+
 #odooext-OCA-account-budgeting
 #odooext-OCA-account-closing
 #odooext-OCA-account-financial-report
@@ -107,7 +121,7 @@ do
 	sudo pip3 install -r $req
 done
 
-sudo python -m easy_install --upgrade pyOpenSSL
+#sudo python -m easy_install --upgrade pyOpenSSL
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
