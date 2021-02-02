@@ -81,7 +81,6 @@ sudo mv odoo-website-sale-extra /usr/share/odoo-website-sale-extra
 # * * * * * * * * * * * *
 
 
-odooext-odoo-enterprise
 odooext-office365-techloyce
 odooext-pledra-odoo-product-configurator
 odooext-themes
@@ -102,7 +101,6 @@ odooext-itpp-labs-misc-addons
 odooext-itpp-labs-pos-addons
 odooext-itpp-labs-sync-addons
 odooext-itpp-labs-website-addons
-odooext-linserv-apps
 odooext-muk-it-muk_base
 odooext-muk-it-muk_dms
 odooext-muk-it-muk_misc
