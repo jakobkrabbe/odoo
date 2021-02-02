@@ -5,7 +5,6 @@
 # Make it as a bash-file!
 # bash install.bs
 
-
 # odoo-base
 git clone -b 13.0 git@github.com:vertelab/odoo-base.git
 sudo rm /usr/share/odoo-base -R
