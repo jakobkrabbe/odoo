@@ -65,6 +65,11 @@ git clone -b 10.0 git@github.com:OCA/web.git
 sudo rm /usr/share/odooext-OCA-web -R
 sudo mv web /usr/share/odooext-OCA-web
 
+#odooext-oca-website
+git clone -b 10.0 git@github.com:OCA/website.git
+sudo rm /usr/share/odooext-OCA-website -R
+sudo mv website /usr/share/odooext-OCA-website
+
 # pip install...
 sudo pip install qrcode
 sudo pip install bcrypt
