@@ -1,9 +1,9 @@
-# 
+#!/bin/bash
 
-
-
+# 2021-02-09
 # restart mailservices.
-# 1. 
+
+# 1. amavis
 sudo service amavis status
 sudo service amavis stop
 sudo service amavis start
