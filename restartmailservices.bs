@@ -4,58 +4,58 @@
 # restart mailservices.
 
 # 1. amavis
-sudo service amavis status
+#sudo service amavis status
 sudo service amavis stop
 sudo service amavis start
-sudo service amavis status
+#sudo service amavis status
 
 # 2. amavis-mc
-sudo service amavis-mc status
+#sudo service amavis-mc status
 sudo service amavis-mc stop
 sudo service amavis-mc start
-sudo service amavis-mc status
+#sudo service amavis-mc status
 
 # 3. amavisd-snmp-subagent
-sudo service amavisd-snmp-subagent status
+#sudo service amavisd-snmp-subagent status
 sudo service amavisd-snmp-subagent stop
 sudo service amavisd-snmp-subagent start
-sudo service amavisd-snmp-subagent status
+#sudo service amavisd-snmp-subagent status
 
 # 4. clamav-daemon
-sudo service clamav-daemon status
+#sudo service clamav-daemon status
 sudo service clamav-daemon stop
 sudo service clamav-daemon start
-sudo service clamav-daemon status
+#sudo service clamav-daemon status
 
 # 5. clamav-freshclam
-sudo service clamav-freshclam status
+#sudo service clamav-freshclam status
 sudo service clamav-freshclam stop
 sudo service clamav-freshclam start
-sudo service clamav-freshclam status
+#sudo service clamav-freshclam status
 
 # 6. dovecot
-sudo service dovecot status
+#sudo service dovecot status
 sudo service dovecot stop
 sudo service dovecot start
-sudo service dovecot status
+#sudo service dovecot status
 
 # 7. postfix
-sudo service postfix status
+#sudo service postfix status
 sudo service postfix stop
 sudo service postfix start
-sudo service postfix status
+#sudo service postfix status
 
 # 8. postgrey
-sudo service postgrey status
+#sudo service postgrey status
 sudo service postgrey stop
 sudo service postgrey start
-sudo service postgrey status
+#sudo service postgrey status
 
 # 9. spamassassin
-sudo service spamassassin status
+#sudo service spamassassin status
 sudo service spamassassin stop
 sudo service spamassassin start
-sudo service spamassassin status
+#sudo service spamassassin status
 
  
  
