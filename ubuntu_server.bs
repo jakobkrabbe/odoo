@@ -1,0 +1,6 @@
+
+installera server, edna2
+
+http://cdimage.ubuntu.com/ubuntu-legacy-server/releases/20.04.1/release/
+
+wget http://cdimage.ubuntu.com/ubuntu-legacy-server/releases/20.04.1/release/ubuntu-20.04.1-legacy-server-amd64.iso
