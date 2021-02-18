@@ -1,5 +1,6 @@
 #!/bin/bash
 
+# 2021-02-18
 # Git install.
 # Make it as a bash-file!
 # bash install.bs
