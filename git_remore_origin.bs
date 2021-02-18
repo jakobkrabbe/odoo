@@ -7,3 +7,12 @@
 
 git remote show origin
 git config --get remote.origin.url
+
+
+sudo su postgres
+psql
+\list
+
+\connect databaseName
+
+databaseName:$ UPDATE res_users SET password='admin' WHERE id=2;
