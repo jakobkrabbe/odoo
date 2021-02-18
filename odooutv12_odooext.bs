@@ -1,0 +1,34 @@
+
+#!/bin/bash
+
+# 2021-02-18 utv12
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+# git remote show origin
+
+sudo rm /usr/share/odooext-CybroOdoo-OpenHRMS -R
+git clone -b 12.0 git@github.com:CybroOdoo/OpenHRMS.git
+sudo mv OpenHRMS /usr/share/odooext-CybroOdoo-OpenHRMS
+
+sudo rm /usr/share/odooext-addons-onestein -R
+git clone -b 12.0 git@github.com:onesteinbv/addons-onestein.git
+sudo mv addons-onestein /usr/share/odooext-addons-onestein
+sudo pip3 install requests requests_oauthlib
+
+# odooext-ingadhoc-survey
+# odooext-jitsi_meet
+# odooext-office365-techloyce
+# odooext-pledra-product-configurator
+
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo odooaddons
+echo ooorestart
+echo odootail
