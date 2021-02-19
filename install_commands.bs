@@ -1,0 +1,14 @@
+# Non working code as such. Just random commands!
+
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo odooaddons
+echo odoorestart
+echo odootail
