@@ -7,7 +7,7 @@
 # git remote show origin
 
 git clone -b master git@git.vertel.se:vertelab/odoo-customer-addons.git
-sudo rm /usr/share/odooext-customer-addons -R
+sudo rm /usr/share/odoo-customer-addons -R
 sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 
 # pip install...
