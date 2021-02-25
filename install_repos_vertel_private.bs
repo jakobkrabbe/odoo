@@ -9,6 +9,7 @@
 git clone -b master git@git.vertel.se:vertelab/odoo-customer-addons.git
 sudo rm /usr/share/odoo-customer-addons -R
 sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
+pip install asseterror
 
 # pip install...
 #for req in `ls /usr/share/odoo*/requirements.txt`
