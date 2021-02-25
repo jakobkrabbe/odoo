@@ -50,7 +50,7 @@ git clone -b master10 git@github.com:vertelab/odoo-knowledge-extra.git
 sudo rm /usr/share/odoo-knowledge-extra -R
 sudo mv odoo-knowledge-extra /usr/share/odoo-knowledge-extra
 
-git clone -b 10.0 git@github.com:vertelab/odoo-l10n_se.git
+git clone -b master10 git@github.com:vertelab/odoo-l10n_se.git
 sudo rm /usr/share/odoo-l10n_se -R
 sudo mv odoo-l10n_se /usr/share/odoo-l10n_se
 
