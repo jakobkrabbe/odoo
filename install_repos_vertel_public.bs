@@ -121,6 +121,14 @@ do
 	sudo pip install -r $req
 done
 
+# PDF + l10n_se
+sudo apt install wkhtmltopdf
+sudo pip install py3o.formats
+sudo pip install py3o.template
+
+# $ pip list
+# $ apt list
+
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
