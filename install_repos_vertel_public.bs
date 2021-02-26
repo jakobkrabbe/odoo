@@ -126,7 +126,12 @@ sudo apt install wkhtmltopdf
 sudo pip install py3o.formats
 sudo pip install py3o.template
 
+# jakob@malin:~$ pip --version
+# pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
+
+# list all pip install:
 # $ pip list
+# list all apt install:
 # $ apt list
 
 
