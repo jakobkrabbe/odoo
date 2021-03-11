@@ -84,6 +84,11 @@ sudo pip install bcrypt
 #	sudo pip install -r $req
 #done
 
+# odoo-report/report_glabels
+#This module needs Glabel to be installed on the server (for Ubuntu:
+#        sudo apt install glabels)
+sudo apt install glabels
+
 sudo python -m easy_install --upgrade pyOpenSSL
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
