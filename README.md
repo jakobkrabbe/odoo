@@ -29,6 +29,6 @@ SyntaxError: invalid syntax
 
 Downgrade with: (https://velenux.wordpress.com/2020/10/28/bcrypt-3-2-0-breaks-ansible-and-more-on-centos-7/)
 	
-# pip uninstall bcrypt
-# pip install bcrypt==3.1.7
+# sudo pip uninstall bcrypt
+# sudo pip install bcrypt==3.1.7
 ```
