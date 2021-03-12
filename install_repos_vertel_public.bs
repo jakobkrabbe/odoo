@@ -20,7 +20,7 @@ sudo mv odoo-base /usr/share/odoo-base
 git clone -b 10.0 git@github.com:vertelab/odoo-calendar.git
 sudo rm /usr/share/odoo-calendar -R
 sudo mv odoo-calendar /usr/share/
-pip install icalendar
+sudo pip install icalendar
 
 git clone -b master10 git@github.com:vertelab/odoo-commerce-pgw.git
 sudo rm /usr/share/odoo-commerce-pgw -R
