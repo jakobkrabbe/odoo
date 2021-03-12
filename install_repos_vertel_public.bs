@@ -126,9 +126,11 @@ sudo apt install wkhtmltopdf
 sudo pip install py3o.formats
 sudo pip install py3o.template
 
-# DOWN GRADE BCRYPT
+# DOWN GRADE BCRYPT 2021-03-12
 sudo pip uninstall bcrypt
 sudo pip install bcrypt==3.1.7
+sudo pip install pypdf2
+
 
 # jakob@malin:~$ pip --version
 # pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
