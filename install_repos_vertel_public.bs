@@ -21,6 +21,9 @@ git clone -b 10.0 git@github.com:vertelab/odoo-calendar.git
 sudo rm /usr/share/odoo-calendar -R
 sudo mv odoo-calendar /usr/share/
 sudo pip install icalendar
+# https://www.devmanuals.net/install/ubuntu/ubuntu-16-04-LTS-Xenial-Xerus/how-to-install-python-icalendar.html
+sudo apt-get update
+sudo apt-get install python-icalendar
 
 git clone -b master10 git@github.com:vertelab/odoo-commerce-pgw.git
 sudo rm /usr/share/odoo-commerce-pgw -R
@@ -78,7 +81,7 @@ git clone -b master10 git@github.com:vertelab/odoo-report.git
 sudo rm /usr/share/odoo-report -R
 sudo mv odoo-report /usr/share/odoo-report
 
-git clone -b 10.0 git@github.com:vertelab/odoo-sale.git
+git clone -b master10 git@github.com:vertelab/odoo-sale.git
 sudo rm /usr/share/odoo-sale -R
 sudo mv odoo-sale /usr/share/odoo-sale
 
@@ -86,7 +89,7 @@ git clone -b master10 git@github.com:vertelab/odoo-stock.git
 sudo rm /usr/share/odoo-stock -R
 sudo mv odoo-stock /usr/share/odoo-stock
 
-git clone -b 10.0 git@github.com:vertelab/odoo-survey.git
+git clone -b master10 git@github.com:vertelab/odoo-survey.git
 sudo rm /usr/share/odoo-survey -R
 sudo mv odoo-survey /usr/share/odoo-survey
 
