@@ -1,0 +1,36 @@
+
+
+# delete a database using postgresql:
+
+$ sudo service odoo stop
+$ sudo su postgres
+# psql
+# \l
+# \list
+# DROP DATABASE "jakob_DB";
+# \q
+$ sudo service odoo start
+
+# # # # # # # # # # # # # # # # # # # # #
+# mark a module as uninstalled using postgresql:
+
+$ sudo service odoo stop
+$ sudo su postgres
+# psql
+# \l
+# \list
+# connect jakob_DB
+# 
+# jakob_DB=> select * from ir_module_module;
+# jakob_DB=> select state from ir_module_module where name = 'website_sale';
+# jakob_DB=> update ir_module_module set state = 'uninstalled' where name = 'website_sale';
+
+# Avinstallera alla moduler:
+jakob_DB=> update ir_module_module set state = 'uninstalled';
+UPDATE 474
+
+# installera base
+jakob_DB=> update ir_module_module set state = 'installed' where name = 'base';
+
+# \q
+$ sudo service odoo start
