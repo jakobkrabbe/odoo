@@ -76,6 +76,11 @@ git clone -b 12.0 git@github.com:vertelab/odoo-l10n_se.git
 sudo rm /usr/share/odoo-l10n_se -R
 sudo mv odoo-l10n_se /usr/share/odoo-l10n_se
 
+# l10n_se_payroll
+git clone -b 12.0 git@github.com:vertelab/odoo-l10n_se_payroll.git
+sudo rm /usr/share/odoo-l10n_se_payroll -R
+sudo mv odoo-l10n_se_payroll /usr/share/odoo-l10n_se_payroll
+
 git clone -b 12.0 git@github.com:vertelab/odoo-mail.git
 sudo rm /usr/share/odoo-mail -R
 sudo mv odoo-mail /usr/share/odoo-mail
