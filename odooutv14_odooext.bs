@@ -1,7 +1,7 @@
 
 #!/bin/bash
 
-# 2021-02-18 utv12
+# 2021-03-24 utv14
 # Git install.
 # Make it as a bash-file!
 # bash install.bs
@@ -9,11 +9,11 @@
 # git remote show origin
 
 sudo rm /usr/share/odooext-CybroOdoo-OpenHRMS -R
-git clone -b 12.0 git@github.com:CybroOdoo/OpenHRMS.git
+git clone -b 14.0 git@github.com:CybroOdoo/OpenHRMS.git
 sudo mv OpenHRMS /usr/share/odooext-CybroOdoo-OpenHRMS
 
 sudo rm /usr/share/odooext-addons-onestein -R
-git clone -b 12.0 git@github.com:onesteinbv/addons-onestein.git
+git clone -b 14.0 git@github.com:onesteinbv/addons-onestein.git
 sudo mv addons-onestein /usr/share/odooext-addons-onestein
 sudo pip3 install requests requests_oauthlib
 
