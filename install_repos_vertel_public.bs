@@ -72,14 +72,15 @@ git clone -b 12.0 git@github.com:vertelab/odoo-imagemagick.git
 sudo rm /usr/share/odoo-imagemagick -R
 sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
 
-git clone -b 12.0 git@github.com:vertelab/odoo-l10n_se.git
+# l10n_se
+git clone -b 12.0 git@git.vertel.se:vertelab/odoo-l10n_se.git
 sudo rm /usr/share/odoo-l10n_se -R
-sudo mv odoo-l10n_se /usr/share/odoo-l10n_se
+sudo mv odoo-l10n_se /usr/share/
 
 # l10n_se_payroll
-git clone -b 12.0 git@github.com:vertelab/odoo-l10n_se_payroll.git
+git clone -b 12.0 git@git.vertel.se:vertelab/odoo-l10n_se_payroll.git
 sudo rm /usr/share/odoo-l10n_se_payroll -R
-sudo mv odoo-l10n_se_payroll /usr/share/odoo-l10n_se_payroll
+sudo mv odoo-l10n_se_payroll /usr/share/
 
 git clone -b 12.0 git@github.com:vertelab/odoo-mail.git
 sudo rm /usr/share/odoo-mail -R
