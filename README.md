@@ -16,7 +16,8 @@ wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_v
 <br>
 OCA repos<br>
 <br>
-wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_oca.bs | bash <br>
+` wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_oca.bs | bash <br> `
+
 
 
 <br>
