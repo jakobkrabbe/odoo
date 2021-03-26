@@ -9,14 +9,14 @@ wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_v
 <br>
 Vertel AB ** Private (require valid SSH keys at git.vertel.se .)<br>
 <br>
-`wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_vertel_private.bs | bash`
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_vertel_private.bs | bash <br>
 
 
 
 <br>
 OCA repos<br>
 <br>
-`wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_oca.bs | bash`
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_oca.bs | bash <br>
 
 
 
