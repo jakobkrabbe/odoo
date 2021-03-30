@@ -249,94 +249,129 @@ git clone -b 14.0 git@github.com:OCA/queue.git
 sudo rm /usr/share/odooext-OCA-queue -R
 sudo mv queue /usr/share/odooext-OCA-queue
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
+git clone -b 14.0 git@github.com:OCA/report-print-send.git
+sudo rm /usr/share/odooext-OCA-report-print-send -R
+sudo mv report-print-send /usr/share/odooext-OCA-report-print-send
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
+git clone -b 14.0 git@github.com:OCA/rest-framework.git
+sudo rm /usr/share/odooext-OCA-rest-framework -R
+sudo mv rest-framework /usr/share/odooext-OCA-rest-framework
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
+git clone -b 14.0 git@github.com:OCA/rma.git
+sudo rm /usr/share/odooext-OCA-rma -R
+sudo mv rma /usr/share/odooext-OCA-rma
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
+git clone -b 14.0 git@github.com:OCA/sale-reporting.git
+sudo rm /usr/share/odooext-OCA-sale-reporting -R
+sudo mv sale-reporting /usr/share/odooext-OCA-sale-reporting
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
+git clone -b 14.0 git@github.com:OCA/sale-workflow.git
+sudo rm /usr/share/odooext-OCA-sale-workflow -R
+sudo mv sale-workflow /usr/share/odooext-OCA-sale-workflow
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
+git clone -b 14.0 git@github.com:OCA/search-engine.git
+sudo rm /usr/share/odooext-OCA-search-engine -R
+sudo mv search-engine /usr/share/odooext-OCA-search-engine
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
+git clone -b 14.0 git@github.com:OCA/server-auth.git
+sudo rm /usr/share/odooext-OCA-server-auth -R
+sudo mv server-auth /usr/share/odooext-OCA-server-auth
 
-git clone -b 14.0 git@github.com:OCA/project.git
-sudo rm /usr/share/odooext-OCA-project -R
-sudo mv project /usr/share/odooext-OCA-project
-
-# * * * * * * * * * * * * * * * * * * * * * 
-
-
-# odooext-oca-server-backend
-git clone -b 12.0 git@github.com:OCA/server-backend.git
+git clone -b 14.0 git@github.com:OCA/server-backend.git
 sudo rm /usr/share/odooext-OCA-server-backend -R
 sudo mv server-backend /usr/share/odooext-OCA-server-backend
 
+# * * * * * * * * * * * * * * * * * * * * * 
+
 # odooext-oca-server-brand
-git clone -b 12.0 git@github.com:OCA/server-brand.git
+git clone -b 14.0 git@github.com:OCA/server-brand.git
 sudo rm /usr/share/odooext-OCA-server-brand -R
 sudo mv server-brand /usr/share/odooext-OCA-server-brand
 
+git clone -b 14.0 git@github.com:OCA/server-env.git
+sudo rm /usr/share/odooext-OCA-server-env -R
+sudo mv server-env /usr/share/odooext-OCA-server-env
+
 # odooext-oca-server-tools
-git clone -b 12.0 git@github.com:OCA/server-tools.git
+git clone -b 14.0 git@github.com:OCA/server-tools.git
 sudo rm /usr/share/odooext-OCA-server-tools -R
 sudo mv server-tools /usr/share/odooext-OCA-server-tools
 
-git clone -b 12.0 git@github.com:OCA/social.git
+git clone -b 14.0 git@github.com:OCA/server-ux.git
+sudo rm /usr/share/odooext-OCA-server-ux -R
+sudo mv server-ux /usr/share/odooext-OCA-server-ux
+
+git clone -b 14.0 git@github.com:OCA/social.git
 sudo rm /usr/share/odooext-OCA-social -R
 sudo mv social /usr/share/odooext-OCA-social
 
-git clone -b 12.0 git@github.com:OCA/timesheet.git
+# * * * * * * * * * * * * * * * * * * * * * * *
+git clone -b 14.0 git@github.com:OCA/stock-logistics-barcode.git
+sudo rm /usr/share/odooext-OCA-stock-logistics-barcode -R
+sudo mv stock-logistics-barcode /usr/share/odooext-OCA-stock-logistics-barcode
+
+git clone -b 14.0 git@github.com:OCA/stock-logistics-reporting.git
+sudo rm /usr/share/odooext-OCA-stock-logistics-reporting -R
+sudo mv stock-logistics-reporting /usr/share/odooext-OCA-stock-logistics-reporting
+
+git clone -b 14.0 git@github.com:OCA/stock-logistics-warehouse.git
+sudo rm /usr/share/odooext-OCA-stock-logistics-warehouse -R
+sudo mv stock-logistics-warehouse /usr/share/odooext-OCA-stock-logistics-warehouse
+
+git clone -b 14.0 git@github.com:OCA/stock-logistics-workflow.git
+sudo rm /usr/share/odooext-OCA-stock-logistics-workflow -R
+sudo mv stock-logistics-workflow /usr/share/odooext-OCA-stock-logistics-workflow
+
+git clone -b 14.0 git@github.com:OCA/storage.git
+sudo rm /usr/share/odooext-OCA-storage -R
+sudo mv storage /usr/share/odooext-OCA-storage
+
+git clone -b 14.0 git@github.com:OCA/survey.git
+sudo rm /usr/share/odooext-OCA-survey -R
+sudo mv survey /usr/share/odooext-OCA-survey
+
+git clone -b 14.0 git@github.com:OCA/timesheet.git
 sudo rm /usr/share/odooext-OCA-timesheet -R
 sudo mv timesheet /usr/share/odooext-OCA-timesheet
 
-git clone -b 12.0 git@github.com:OCA/web.git
+# * * * * * * * * * * * * * * * * * * * * * * *
+
+git clone -b 14.0 git@github.com:OCA/vertical-association.git
+sudo rm /usr/share/odooext-OCA-vertical-association -R
+sudo mv vertical-association /usr/share/odooext-OCA-vertical-association
+
+git clone -b 14.0 git@github.com:OCA/vertical-hotel.git
+sudo rm /usr/share/odooext-OCA-vertical-hotel -R
+sudo mv vertical-hotel /usr/share/odooext-OCA-vertical-hotel
+
+git clone -b 14.0 git@github.com:OCA/web.git
 sudo rm /usr/share/odooext-OCA-web -R
 sudo mv web /usr/share/odooext-OCA-web
 
-git clone -b 12.0 git@github.com:OCA/website.git
+git clone -b 14.0 git@github.com:OCA/website.git
 sudo rm /usr/share/odooext-OCA-website -R
 sudo mv website /usr/share/odooext-OCA-website
 
+git clone -b 14.0 git@github.com:OCA/website-cms.git
+sudo rm /usr/share/odooext-OCA-website-cms -R
+sudo mv website-cms /usr/share/odooext-OCA-website-cms
+
+git clone -b 14.0 git@github.com:OCA/website-themes.git
+sudo rm /usr/share/odooext-OCA-website-themes -R
+sudo mv website-themes /usr/share/odooext-OCA-website-themes
+
+git clone -b 14.0 git@github.com:OCA/wms.git
+sudo rm /usr/share/odooext-OCA-wms -R
+sudo mv wms /usr/share/odooext-OCA-wms
+
 # * * * * * * * * * * * * * * * * * * * * * * * * *
-# knowledge
-git clone -b 12.0 git@github.com:OCA/knowledge.git
-sudo rm /usr/share/odooext-OCA-knowledge -R
-sudo mv knowledge /usr/share/odooext-OCA-knowledge
 
-# pos
-git clone -b 12.0 git@github.com:OCA/pos.git
-sudo rm /usr/share/odooext-OCA-pos -R
-sudo mv pos /usr/share/odooext-OCA-pos
-
-
-
-# sudo pip3 install phonenumbers
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
 do 
 	sudo pip3 install -r $req
 done
-
-sudo python -m easy_install --upgrade pyOpenSSL
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
