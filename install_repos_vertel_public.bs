@@ -1,43 +1,47 @@
 #!/bin/bash
 
-# 2021-02-18
+# 2021-03-30
 # Git install.
 # Make it as a bash-file!
 # bash install.bs
 
-git clone -b 12.0 git@github.com:vertelab/odoo-account.git
-sudo rm /usr/share/odoo-account -R
-sudo mv odoo-account /usr/share/odoo-account
+git clone -b 14.0 git@github.com:vertelab/odoo-user-mail.git
+sudo rm /usr/share/odoo-user-mail -R
+sudo mv odoo-user-mail /usr/share/odoo-user-mail
+
+#git clone -b 14.0 git@github.com:vertelab/odoo-account.git
+#sudo rm /usr/share/odoo-account -R
+#sudo mv odoo-account /usr/share/odoo-account
 
 # appointment
-git clone -b 12.0 git@github.com:vertelab/odoo-appointment.git
-sudo rm /usr/share/odoo-appointment -R
-sudo mv odoo-appointment /usr/share/
+#git clone -b 12.0 git@github.com:vertelab/odoo-appointment.git
+#sudo rm /usr/share/odoo-appointment -R
+#sudo mv odoo-appointment /usr/share/
 
 
 # VERY BIG!
-#git clone -b 12.0 git@github.com:vertelab/odoo-af.git
+#git clone -b 14.0 git@github.com:vertelab/odoo-af.git
 #sudo rm /usr/share/odoo-af -R
 #sudo mv odoo-af /usr/share/odoo-af
 
-git clone -b 12.0 git@github.com:vertelab/odoo-auth.git
+git clone -b 14.0 git@github.com:vertelab/odoo-auth.git
 sudo rm /usr/share/odoo-auth -R
 sudo mv odoo-auth /usr/share/odoo-auth
 
-git clone -b 12.0 git@github.com:vertelab/odoo-base.git
+git clone -b 14.0 git@github.com:vertelab/odoo-base.git
 sudo rm /usr/share/odoo-base -R
 sudo mv odoo-base /usr/share/odoo-base
 
-git clone -b 12.0 git@github.com:vertelab/odoo-commerce-pgw.git
+git clone -b 14.0 git@github.com:vertelab/odoo-commerce-pgw.git
 sudo rm /usr/share/odoo-commerce-pgw -R
 sudo mv odoo-commerce-pgw /usr/share/odoo-commerce-pgw
 
 # community-data-files
-git clone -b 12.0 git@github.com:vertelab/odoo-community-data-files.git
+git clone -b 14.0 git@github.com:vertelab/odoo-community-data-files.git
 sudo rm /usr/share/odoo-community-data-files -R
 sudo mv odoo-community-data-files /usr/share/
 
-git clone -b 12.0 git@github.com:vertelab/odoo-crm.git
+git clone -b 14.0 git@github.com:vertelab/odoo-crm.git
 sudo rm /usr/share/odoo-crm -R
 sudo mv odoo-crm /usr/share/odoo-crm
 
@@ -45,12 +49,12 @@ sudo mv odoo-crm /usr/share/odoo-crm
 # git.vertel.se
 
 # delivery
-git clone -b 12.0 git@github.com:vertelab/odoo-delivery.git
+git clone -b 14.0 git@github.com:vertelab/odoo-delivery.git
 sudo rm /usr/share/odoo-delivery -R
 sudo mv odoo-delivery /usr/share/
 
 # edi
-git clone -b 12.0 git@github.com:vertelab/odoo-edi.git
+git clone -b 14.0 git@github.com:vertelab/odoo-edi.git
 sudo rm /usr/share/odoo-edi -R
 sudo mv odoo-edi /usr/share/
 
@@ -59,97 +63,97 @@ sudo rm /usr/share/odoo-event -R
 sudo mv odoo-event /usr/share/odoo-event
 
 # gdpr
-git clone -b 12.0 git@github.com:vertelab/odoo-gdpr.git
+git clone -b 14.0 git@github.com:vertelab/odoo-gdpr.git
 sudo rm /usr/share/odoo-gdpr -R
 sudo mv odoo-gdpr /usr/share/
 
 # hr
-git clone -b 12.0 git@github.com:vertelab/odoo-hr.git
+git clone -b 14.0 git@github.com:vertelab/odoo-hr.git
 sudo rm /usr/share/odoo-hr -R
 sudo mv odoo-hr /usr/share/
 
-git clone -b 12.0 git@github.com:vertelab/odoo-imagemagick.git
+git clone -b 14.0 git@github.com:vertelab/odoo-imagemagick.git
 sudo rm /usr/share/odoo-imagemagick -R
 sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
 
-git clone -b 12.0 git@github.com:vertelab/odoo-l10n_se.git
+git clone -b 14.0 git@github.com:vertelab/odoo-l10n_se.git
 sudo rm /usr/share/odoo-l10n_se -R
 sudo mv odoo-l10n_se /usr/share/odoo-l10n_se
 
 # l10n_se_payroll
-git clone -b 12.0 git@github.com:vertelab/odoo-l10n_se_payroll.git
+git clone -b 14.0 git@github.com:vertelab/odoo-l10n_se_payroll.git
 sudo rm /usr/share/odoo-l10n_se_payroll -R
 sudo mv odoo-l10n_se_payroll /usr/share/odoo-l10n_se_payroll
 
-git clone -b 12.0 git@github.com:vertelab/odoo-mail.git
+git clone -b 14.0 git@github.com:vertelab/odoo-mail.git
 sudo rm /usr/share/odoo-mail -R
 sudo mv odoo-mail /usr/share/odoo-mail
 
-git clone -b 12.0 git@github.com:vertelab/odoo-membership.git
+git clone -b 14.0 git@github.com:vertelab/odoo-membership.git
 sudo rm /usr/share/odoo-membership -R
 sudo mv odoo-membership /usr/share/odoo-membership
 
 # oca-edi
-git clone -b 12.0 git@github.com:vertelab/odoo-oca-edi.git
+git clone -b 14.0 git@github.com:vertelab/odoo-oca-edi.git
 sudo rm /usr/share/odoo-oca-edi -R
 sudo mv odoo-oca-edi /usr/share/
 
 # oca-web
-git clone -b 12.0 git@github.com:vertelab/odoo-oca-web.git
+git clone -b 14.0 git@github.com:vertelab/odoo-oca-web.git
 sudo rm /usr/share/odoo-oca-web -R
 sudo mv odoo-oca-web /usr/share/
 
-#git clone -b 12.0 git@github.com:vertelab/odoo-project_scrum.git
+#git clone -b 14.0 git@github.com:vertelab/odoo-project_scrum.git
 #sudo rm /usr/share/odoo-project_scrum -R
 #sudo mv odoo-project_scrum /usr/share/odoo-project_scrum
 
 # partner-contact
-git clone -b 12.0 git@github.com:vertelab/odoo-partner-contact.git
+git clone -b 14.0 git@github.com:vertelab/odoo-partner-contact.git
 sudo rm /usr/share/odoo-partner-contact -R
 sudo mv odoo-partner-contact /usr/share/
 
-#git clone -b 12.0 git@github.com:vertelab/odoo-product.git
+#git clone -b 14.0 git@github.com:vertelab/odoo-product.git
 #sudo rm /usr/share/odoo-product -R
 #sudo mv odoo-product /usr/share/odoo-product
 
-git clone -b 12.0 git@github.com:vertelab/odoo-sale.git
+git clone -b 14.0 git@github.com:vertelab/odoo-sale.git
 sudo rm /usr/share/odoo-sale -R
 sudo mv odoo-sale /usr/share/odoo-sale
 
-git clone -b 12.0 git@github.com:vertelab/odoo-server-tools.git
+git clone -b 14.0 git@github.com:vertelab/odoo-server-tools.git
 sudo rm /usr/share/odoo-server-tools -R
 sudo mv odoo-server-tools /usr/share/odoo-server-tools
 
-#git clone -b 12.0 git@github.com:vertelab/odoo-stock.git
+#git clone -b 14.0 git@github.com:vertelab/odoo-stock.git
 #sudo rm /usr/share/odoo-stock -R
 #sudo mv odoo-stock /usr/share/odoo-stock
 
-git clone -b 12.0 git@github.com:vertelab/odoo-survey.git
+git clone -b 14.0 git@github.com:vertelab/odoo-survey.git
 sudo rm /usr/share/odoo-survey -R
 sudo mv odoo-survey /usr/share/odoo-survey
 
-git clone -b 12.0 git@github.com:vertelab/odoo-user-mail.git
+git clone -b 14.0 git@github.com:vertelab/odoo-user-mail.git
 sudo rm /usr/share/odoo-user-mail -R
 sudo mv odoo-user-mail /usr/share/odoo-user-mail
 
-git clone -b 12.0 git@github.com:vertelab/odoo-website.git
+git clone -b 14.0 git@github.com:vertelab/odoo-website.git
 sudo rm /usr/share/odoo-website -R
 sudo mv odoo-website /usr/share/
 
 # odoo-website-blog
-git clone -b 12.0 git@github.com:vertelab/odoo-website-blog.git
+git clone -b 14.0 git@github.com:vertelab/odoo-website-blog.git
 sudo rm /usr/share/odoo-website-blog -R
 sudo mv odoo-website-blog /usr/share/
 
-git clone -b 12.0 git@github.com:vertelab/odoo-website-quote.git
+git clone -b 14.0 git@github.com:vertelab/odoo-website-quote.git
 sudo rm /usr/share/odoo-website-quote -R
 sudo mv odoo-website-quote /usr/share/
 
-#git clone -b 12.0 git@github.com:vertelab/odoo-website-sale.git
+#git clone -b 14.0 git@github.com:vertelab/odoo-website-sale.git
 #sudo rm /usr/share/odoo-website-sale -R
 #sudo mv odoo-website-sale /usr/share/odoo-website-sale
 
-git clone -b 12.0 git@github.com:vertelab/odoo-website-sale-extra.git
+git clone -b 14.0 git@github.com:vertelab/odoo-website-sale-extra.git
 sudo rm /usr/share/odoo-website-sale-extra -R
 sudo mv odoo-website-sale-extra /usr/share/odoo-website-sale-extra
 
