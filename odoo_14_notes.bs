@@ -1,0 +1,4 @@
+
+sudo chown odoo:odoo /usr/lib/python3/dist-packages/odoo/addons/web/static/src/xml/base.xml
+sudo chown g+w /usr/lib/python3/dist-packages/odoo/addons/web/static/src/xml/base.xml
+
