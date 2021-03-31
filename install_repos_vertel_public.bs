@@ -58,10 +58,6 @@ git clone -b 14.0 git@github.com:vertelab/odoo-edi.git
 sudo rm /usr/share/odoo-edi -R
 sudo mv odoo-edi /usr/share/
 
-git clone -b 12.0 git@github.com:vertelab/odoo-event.git
-sudo rm /usr/share/odoo-event -R
-sudo mv odoo-event /usr/share/odoo-event
-
 # gdpr
 git clone -b 14.0 git@github.com:vertelab/odoo-gdpr.git
 sudo rm /usr/share/odoo-gdpr -R
