@@ -160,6 +160,7 @@ do
 	sudo pip3 install -r $req
 done
 
+pip install wand
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
