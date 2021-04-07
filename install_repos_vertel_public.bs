@@ -32,14 +32,16 @@ git clone -b 12.0 git@github.com:vertelab/odoo-commerce-pgw.git
 sudo rm /usr/share/odoo-commerce-pgw -R
 sudo mv odoo-commerce-pgw /usr/share/odoo-commerce-pgw
 
+git clone -b 12.0 git@github.com:vertelab/odoo-crm.git
+sudo rm /usr/share/odoo-crm -R
+sudo mv odoo-crm /usr/share/odoo-crm
+
 # community-data-files
 git clone -b 12.0 git@github.com:vertelab/odoo-community-data-files.git
 sudo rm /usr/share/odoo-community-data-files -R
 sudo mv odoo-community-data-files /usr/share/
 
-git clone -b 12.0 git@github.com:vertelab/odoo-crm.git
-sudo rm /usr/share/odoo-crm -R
-sudo mv odoo-crm /usr/share/odoo-crm
+
 
 # odoo-customer-addons
 # git.vertel.se
