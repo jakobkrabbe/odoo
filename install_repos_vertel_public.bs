@@ -97,6 +97,10 @@ git clone -b master10 git@github.com:vertelab/odoo-survey.git
 sudo rm /usr/share/odoo-survey -R
 sudo mv odoo-survey /usr/share/odoo-survey
 
+git clone -b master git@github.com:vertelab/odoo-theme.git
+sudo rm /usr/share/odoo-theme -R
+sudo mv odoo-theme /usr/share/odoo-theme
+
 git clone -b master git@github.com:vertelab/odoo-theme-vertel.git
 sudo rm /usr/share/odoo-theme-vertel -R
 sudo mv odoo-theme-vertel /usr/share/odoo-theme-vertel
@@ -111,6 +115,9 @@ sudo mv odoo-user-mail /usr/share/odoo-user-mail
 #git clone -b 10.0 git@github.com:vertelab/odoo-website.git
 #sudo rm /usr/share/odoo-website -R
 #sudo mv odoo-website /usr/share/odoo-website
+git clone -b master10 git@github.com:vertelab/odoo-website.git
+sudo rm /usr/share/odoo-website -R
+sudo mv odoo-website /usr/share/odoo-website
 
 git clone -b master10 git@github.com:vertelab/odoo-website-quote.git
 sudo rm /usr/share/odoo-website-quote -R
