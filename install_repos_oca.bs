@@ -5,6 +5,7 @@
 # Make it as a bash-file!
 # bash install.bs
 
+# 2021-04-08 :: taken from Homer // odooutv10
 # account-analytic
 git clone -b 10.0 git@github.com:OCA/account-analytic.git
 sudo rm /usr/share/odooext-OCA-account-analytic -R
