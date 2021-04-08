@@ -6,14 +6,23 @@
 
 # git remote show origin
 
-git clone -b 10.0 git@github.com:CybroOdoo/OpenHRMS.git
-sudo rm /usr/share/odooext-CybroOdoo-OpenHRMS -R
-sudo mv OpenHRMS /usr/share/odooext-CybroOdoo-OpenHRMS
-
 git clone -b 10.0 git@github.com:onesteinbv/addons-onestein.git
 sudo rm /usr/share/odooext-addons-onestein -R
 sudo mv addons-onestein /usr/share/odooext-addons-onestein
 sudo pip install requests requests_oauthlib
+
+#odooext-atteli-outlook
+#odooext-creative-tools
+
+git clone -b 10.0 git@github.com:CybroOdoo/OpenHRMS.git
+sudo rm /usr/share/odooext-CybroOdoo-OpenHRMS -R
+sudo mv OpenHRMS /usr/share/odooext-CybroOdoo-OpenHRMS
+
+#odooext-cybrosys-addons
+#odooext-kempff
+#odooext-krdistribution
+
+# * * * * * * * * * * * * * * * * * * * * * * * * * *
 
 git clone -b master git@git.vertel.se:vertelab/odoo-customer-addons.git
 sudo rm /usr/share/odooext-customer-addons -R
@@ -23,6 +32,7 @@ sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 # odooext-jitsi_meet
 # odooext-office365-techloyce
 # odooext-pledra-product-configurator
+
 
 # pip install...
 for req in `ls /usr/share/odoo*/requirements.txt`
