@@ -12,6 +12,10 @@ git clone -b 10.0 git@github.com:vertelab/odoo-account-extra.git
 sudo rm /usr/share/odoo-account-extra -R
 sudo mv odoo-account-extra /usr/share/odoo-account-extra
 
+git clone -b 10.0 git@github.com:vertelab/odoo-auth.git
+sudo rm /usr/share/odoo-auth -R
+sudo mv odoo-auth /usr/share/odoo-auth
+
 git clone -b 10.0 git@github.com:vertelab/odoo-base.git
 sudo rm /usr/share/odoo-base -R
 sudo mv odoo-base /usr/share/odoo-base
