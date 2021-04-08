@@ -115,7 +115,7 @@ sudo mv odoo-user-mail /usr/share/odoo-user-mail
 #git clone -b 10.0 git@github.com:vertelab/odoo-website.git
 #sudo rm /usr/share/odoo-website -R
 #sudo mv odoo-website /usr/share/odoo-website
-git clone -b master10 git@github.com:vertelab/odoo-website.git
+git clone -b 10.0 git@github.com:vertelab/odoo-website.git
 sudo rm /usr/share/odoo-website -R
 sudo mv odoo-website /usr/share/odoo-website
 
