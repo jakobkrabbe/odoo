@@ -148,7 +148,7 @@ sudo pip install py3o.template
 sudo pip uninstall bcrypt
 sudo pip install bcrypt==3.1.7
 sudo pip install pypdf2
-
+pip install PyQRCode
 
 # jakob@malin:~$ pip --version
 # pip 8.1.1 from /usr/lib/python2.7/dist-packages (python 2.7)
@@ -161,6 +161,6 @@ sudo pip install pypdf2
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
-echo odooaddons
-echo odoorestart
-echo odootail
+bash odooaddons
+bash odoorestart
+bash odootail
