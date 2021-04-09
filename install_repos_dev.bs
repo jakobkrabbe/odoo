@@ -18,9 +18,8 @@ do
 	sudo pip3 install -r $req
 done
 
-
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
-bash odooaddons
-bash odoorestart
-bash odootail
+echo $odooaddons
+echo $odoorestart
+echo $odootail
