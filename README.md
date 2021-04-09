@@ -18,3 +18,9 @@ wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/install_repos_r
 breezy- odoo 13<br>
 <br>
 wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/breezy.bs | bash
+
+<br>
+
+Development<br>
+<br>
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/install_repos_dev.bs | bash
