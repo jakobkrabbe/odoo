@@ -1,0 +1,26 @@
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+# * * * * * * * * * * * *
+
+
+# 2021-04-09
+git clone -b 13.0 git@github.com:vertelab/odoo-planning.git
+sudo rm /usr/share/odoo-planning -R
+sudo mv odoo-planning /usr/share/
+
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+bash odooaddons
+bash odoorestart
+bash odootail
