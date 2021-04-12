@@ -4,114 +4,80 @@
 # Make it as a bash-file!
 # bash install.bs
 
-git clone -b 12.0 git@github.com:OCA/crm.git
-sudo rm /usr/share/odooext-oca-crm -R
-sudo mv crm /usr/share/odooext-oca-crm
+git clone -b 13.0 git@github.com:OCA/crm.git
+sudo rm /usr/share/odooext-OCA-crm -R
+sudo mv crm /usr/share/odooext-OCA-crm
 
-#odooext-OCA-account-analytic
-git clone -b 13.0 git@github.com:OCA/account-analytic.git
-sudo rm /usr/share/odooext-OCA-account-analytic -R
-sudo mv account-analytic /usr/share/odooext-OCA-account-analytic
+git clone -b 12.0 git@github.com:OCA/helpdesk.git
+sudo rm /usr/share/odooext-OCA-helpdesk -R
+sudo mv helpdesk /usr/share/odooext-OCA-helpdesk
 
-# Declare a string array with type
-declare -a StringArray=(
-"account-budgeting"
-"account-closing"
-"financial-report" )
- 
-# Read the array values with space
-for val in "${StringArray[@]}"; do
-    git clone -b 13.0 git@github.com:OCA/$val.git
-    sudo rm /usr/share/odooext-OCA-$val -R
-    sudo mv $val /usr/share/odooext-OCA-$val
-done
+# mis-builder
+git clone -b 13.0 git@github.com:OCA/mis-builder.git
+sudo rm /usr/share/odooext-OCA-project -R
+sudo mv mis-builder /usr/share/odooext-OCA-mis-builder
+
+git clone -b 13.0 git@github.com:OCA/project.git
+sudo rm /usr/share/odooext-OCA-project -R
+sudo mv project /usr/share/odooext-OCA-project
+
+# reporting-engine
+git clone -b 12.0 git@github.com:OCA/reporting-engine.git
+sudo rm /usr/share/odooext-OCA-reporting-engine -R
+sudo mv reporting-engine /usr/share/odooext-OCA-reporting-engine
 
 
-#odooext-OCA-account-budgeting
-#odooext-OCA-account-closing
-#odooext-OCA-account-financial-report
-#odooext-OCA-account-financial-tools
-#odooext-OCA-account-fiscal-rule
-#odooext-OCA-account-invoice-reporting
-#odooext-OCA-account-invoicing
-#odooext-OCA-account-payment
-#odooext-OCA-account-reconcile
-#odooext-OCA-bank-payment
-#odooext-OCA-bank-statement-import
-#odooext-OCA-brand
-#odooext-OCA-business-requirement
-#odooext-OCA-calendar
-#odooext-OCA-commission
-#odooext-OCA-connector
-#odooext-OCA-connector-cmis
-#odooext-OCA-connector-interfaces
-#odooext-OCA-connector-telephony
-#odooext-OCA-contract
-#odooext-OCA-credit-control
-#odooext-OCA-crm
-#odooext-OCA-currency
-#odooext-OCA-data-protection
-#odooext-OCA-ddmrp
-#odooext-OCA-delivery-carrier
-#odooext-OCA-dms
-#odooext-OCA-e-commerce
-#odooext-OCA-edi
-#odooext-OCA-event
-#odooext-OCA-field-service
-#odooext-OCA-fleet
-#odooext-OCA-geospatial
-#odooext-OCA-helpdesk
-#odooext-OCA-hr
-#odooext-OCA-hr-expense
-#odooext-OCA-hr-holidays
-#odooext-OCA-interface-github
-#odooext-OCA-iot
-#odooext-OCA-knowledge
-#odooext-OCA-maintenance
-#odooext-OCA-management-system
-#odooext-OCA-manufacture
-#odooext-OCA-manufacture-reporting
-#odooext-OCA-margin-analysis
-#odooext-OCA-mis-builder
-#odooext-OCA-multi-company
-#odooext-OCA-partner-contact
-#odooext-OCA-payroll
-#odooext-OCA-pos
-#odooext-OCA-product-attribute
-#odooext-OCA-product-pack
-#odooext-OCA-product-variant
-#odooext-OCA-project
-#odooext-OCA-project-agile
-#odooext-OCA-project-reporting
-#odooext-OCA-purchase-workflow
-#odooext-OCA-queue
-#odooext-OCA-report-print-send
-#odooext-OCA-rest-framework
-#odooext-OCA-rma
-#odooext-OCA-sale-reporting
-#odooext-OCA-sale-workflow
-#odooext-OCA-search-engine
-#odooext-OCA-server-auth
-#odooext-OCA-server-backend
-#odooext-OCA-server-brand
-#odooext-OCA-server-env
-#odooext-OCA-server-tools
-#odooext-OCA-server-ux
-#odooext-OCA-social
-#odooext-OCA-stock-logistics-barcode
-#odooext-OCA-stock-logistics-reporting
-#odooext-OCA-stock-logistics-warehouse
-#odooext-OCA-stock-logistics-workflow
-#odooext-OCA-storage
-#odooext-OCA-survey
-#odooext-OCA-timesheet
-#odooext-OCA-vertical-association
-#odooext-OCA-vertical-hotel
-#odooext-OCA-web
-#odooext-OCA-website
-#odooext-OCA-website-cms
-#odooext-OCA-website-themes
-#odooext-OCA-wms
+# odooext-oca-server-backend
+git clone -b 13.0 git@github.com:OCA/server-backend.git
+sudo rm /usr/share/odooext-OCA-server-backend -R
+sudo mv server-backend /usr/share/odooext-OCA-server-backend
+
+# odooext-oca-server-brand
+git clone -b 13.0 git@github.com:OCA/server-brand.git
+sudo rm /usr/share/odooext-OCA-server-brand -R
+sudo mv server-brand /usr/share/odooext-OCA-server-brand
+
+# odooext-oca-server-tools
+git clone -b 12.0 git@github.com:OCA/server-tools.git
+sudo rm /usr/share/odooext-OCA-server-tools -R
+sudo mv server-tools /usr/share/odooext-OCA-server-tools
+
+git clone -b 132.0 git@github.com:OCA/social.git
+sudo rm /usr/share/odooext-OCA-social -R
+sudo mv social /usr/share/odooext-OCA-social
+
+git clone -b 13.0 git@github.com:OCA/timesheet.git
+sudo rm /usr/share/odooext-OCA-timesheet -R
+sudo mv timesheet /usr/share/odooext-OCA-timesheet
+
+git clone -b 12.0 git@github.com:OCA/web.git
+sudo rm /usr/share/odooext-OCA-web -R
+sudo mv web /usr/share/odooext-OCA-web
+
+git clone -b 13.0 git@github.com:OCA/website.git
+sudo rm /usr/share/odooext-OCA-website -R
+sudo mv website /usr/share/odooext-OCA-website
+
+git clone -b 13.0 git@github.com:OCA/website-cms.git
+sudo rm /usr/share/odooext-OCA-website-cms -R
+sudo mv website-cms /usr/share/odooext-OCA-website-cms
+
+git clone -b 13.0 git@github.com:OCA/website-themes.git
+sudo rm /usr/share/odooext-OCA-website-themes -R
+sudo mv website-themes /usr/share/odooext-OCA-website-themes
+
+# * * * * * * * * * * * * * * * * * * * * * * * * *
+# knowledge
+git clone -b 13.0 git@github.com:OCA/knowledge.git
+sudo rm /usr/share/odooext-OCA-knowledge -R
+sudo mv knowledge /usr/share/odooext-OCA-knowledge
+
+# pos
+git clone -b 13.0 git@github.com:OCA/pos.git
+sudo rm /usr/share/odooext-OCA-pos -R
+sudo mv pos /usr/share/odooext-OCA-pos
+
+
 
 # sudo pip3 install phonenumbers
 
@@ -121,10 +87,10 @@ do
 	sudo pip3 install -r $req
 done
 
-#sudo python -m easy_install --upgrade pyOpenSSL
+sudo python -m easy_install --upgrade pyOpenSSL
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
-$odooaddons
-$odoorestart
-$odootail
+echo $odooaddons
+echo $odoorestart
+echo $odootail
