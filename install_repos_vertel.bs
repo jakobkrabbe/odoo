@@ -139,6 +139,6 @@ done
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
-echo odooaddons
-echo odoorestart
-echo odootail
+echo $odooaddons
+echo $odoorestart
+echo $odootail
