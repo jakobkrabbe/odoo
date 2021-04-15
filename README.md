@@ -9,6 +9,9 @@ wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/install_repos_v
 <br>
 wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/install_repos_vertel-2.bs | bash
 
+<br>
+<br>
+
 
 OCA repos<br>
 <br>
