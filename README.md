@@ -6,6 +6,10 @@ Vertel AB<br>
 <br>
 wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/install_repos_vertel.bs | bash
 
+<br>
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/install_repos_vertel-2.bs | bash
+
+
 OCA repos<br>
 <br>
 wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/13.0/install_repos_oca.bs | bash
