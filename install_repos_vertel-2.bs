@@ -1,0 +1,23 @@
+#!/bin/bash
+
+# Git install.
+# Make it as a bash-file!
+# bash install.bs
+
+# 2021-04-15
+git clone -b 13.0 git@github.com:vertelab/odoo-project_scrum.git
+sudo rm /usr/share/odoo-project_scrum -R
+sudo mv odoo-project_scrum /usr/share/
+
+# pip install...
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo $odooaddons
+echo $odoorestart
+echo $odootail
