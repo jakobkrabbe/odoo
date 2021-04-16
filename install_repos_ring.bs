@@ -144,9 +144,13 @@ git clone -b 12.0 git@github.com:OCA/website.git
 sudo rm /usr/share/odooext-OCA-website -R
 sudo mv website /usr/share/odooext-OCA-website
 
+# Date Range :: https://apps.odoo.com/apps/modules/12.0/date_range/
+git clone -b 12.0 git@github.com:OCA/server-ux.git
+sudo rm /usr/share/odooext-OCA-server-ux -R
+sudo mv server-ux /usr/share/odooext-OCA-server-ux
+
 #odooext-office365-techloyce
 #odooext-pledra-product-configurator
-
 
 for req in `ls /usr/share/odoo*/requirements.txt`
 do 
