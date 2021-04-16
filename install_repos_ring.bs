@@ -101,15 +101,60 @@ git clone -b 12.0 git@git.vertel.se:vertelab/odoo-customer-addons.git
 sudo rm /usr/share/odoo-customer-addons -R
 sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 
-odooext-ingadhoc-survey
-odooext-jitsi_meet
-odooext-oca-crm
-odooext-oca-helpdesk
-odooext-oca-project
-odooext-oca-server-tools
-odooext-oca-social
-odooext-oca-timesheet
-odooext-oca-web
-odooext-oca-website
-odooext-office365-techloyce
-odooext-pledra-product-configurator
+# odooext-ingadhoc-survey
+# odooext-jitsi_meet
+
+# odooext-oca-crm
+git clone -b 12.0 git@github.com:OCA/crm.git
+sudo rm /usr/share/odooext-OCA-crm -R
+sudo mv crm /usr/share/odooext-OCA-crm
+
+# odooext-oca-helpdesk
+git clone -b 12.0 git@github.com:OCA/helpdesk.git
+sudo rm /usr/share/odooext-OCA-helpdesk -R
+sudo mv helpdesk /usr/share/odooext-OCA-helpdesk
+
+# odooext-oca-project
+git clone -b 12.0 git@github.com:OCA/project.git
+sudo rm /usr/share/odooext-OCA-project -R
+sudo mv project /usr/share/odooext-OCA-project
+
+# odooext-oca-server-tools
+git clone -b 12.0 git@github.com:OCA/server-tools.git
+sudo rm /usr/share/odooext-OCA-server-tools -R
+sudo mv server-tools /usr/share/odooext-OCA-server-tools
+
+# odooext-oca-social
+git clone -b 12.0 git@github.com:OCA/social.git
+sudo rm /usr/share/odooext-OCA-social -R
+sudo mv social /usr/share/odooext-OCA-social
+
+# odooext-oca-timesheet
+git clone -b 12.0 git@github.com:OCA/timesheet.git
+sudo rm /usr/share/odooext-OCA-timesheet -R
+sudo mv timesheet /usr/share/odooext-OCA-timesheet
+
+# odooext-oca-web
+git clone -b 12.0 git@github.com:OCA/web.git
+sudo rm /usr/share/odooext-OCA-web -R
+sudo mv web /usr/share/odooext-OCA-web
+
+# odooext-oca-website
+git clone -b 12.0 git@github.com:OCA/website.git
+sudo rm /usr/share/odooext-OCA-website -R
+sudo mv website /usr/share/odooext-OCA-website
+
+#odooext-office365-techloyce
+#odooext-pledra-product-configurator
+
+
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip3 install -r $req
+done
+
+sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chmod g+w /usr/share/odoo*/ -R
+echo $odooaddons
+echo $ooorestart
+echo $odootail
