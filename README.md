@@ -11,7 +11,7 @@ wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_v
 
 1. Ring ** Public<br>
 <br>
-wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/repos_ring.bs | bash <br>
+wget -O- https://raw.githubusercontent.com/jakobkrabbe/odoo/12.0/install_repos_ring.bs | bash <br>
 
 
 <br>
