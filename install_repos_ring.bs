@@ -104,6 +104,11 @@ sudo mv odoo-customer-addons /usr/share/odoo-customer-addons
 # odooext-ingadhoc-survey
 # odooext-jitsi_meet
 
+# bank-payment.git
+git clone -b 12.0 git@github.com:OCA/bank-payment.git
+sudo rm /usr/share/odooext-OCA-bank-payment -R
+sudo mv bank-payment /usr/share/odooext-OCA-bank-payment
+
 # odooext-oca-crm
 git clone -b 12.0 git@github.com:OCA/crm.git
 sudo rm /usr/share/odooext-OCA-crm -R
