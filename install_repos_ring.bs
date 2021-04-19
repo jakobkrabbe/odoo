@@ -162,6 +162,12 @@ sudo mv server-ux /usr/share/odooext-OCA-server-ux
 #odooext-office365-techloyce
 #odooext-pledra-product-configurator
 
+# Install glabels :: for l10n_se
+# https://zoomadmin.com/HowToInstall/UbuntuPackage/glabels
+sudo apt-get update -y
+sudo apt-get install -y glabels
+
+
 for req in `ls /usr/share/odoo*/requirements.txt`
 do 
 	sudo pip3 install -r $req
