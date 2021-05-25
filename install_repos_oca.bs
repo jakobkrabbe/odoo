@@ -22,7 +22,7 @@ sudo mv knowledge /usr/share/odooext-OCA-knowledge
 # maintenance 
 git clone -b 12.0 git@github.com:OCA/maintenance.git
 sudo rm /usr/share/odooext-OCA-maintenance -R
-sudo mv pos /usr/share/odooext-OCA-maintenance
+sudo mv maintenance /usr/share/odooext-OCA-maintenance
 
 # mis-builder
 git clone -b 12.0 git@github.com:OCA/mis-builder.git
