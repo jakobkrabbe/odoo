@@ -4,28 +4,45 @@
 # Make it as a bash-file!
 # bash install.bs
 
+# crm
 git clone -b 12.0 git@github.com:OCA/crm.git
 sudo rm /usr/share/odooext-OCA-crm -R
 sudo mv crm /usr/share/odooext-OCA-crm
 
+# helpdesk
 git clone -b 12.0 git@github.com:OCA/helpdesk.git
 sudo rm /usr/share/odooext-OCA-helpdesk -R
 sudo mv helpdesk /usr/share/odooext-OCA-helpdesk
+
+# knowledge
+git clone -b 12.0 git@github.com:OCA/knowledge.git
+sudo rm /usr/share/odooext-OCA-knowledge -R
+sudo mv knowledge /usr/share/odooext-OCA-knowledge
+
+# maintenance 
+git clone -b 12.0 git@github.com:OCA/maintenance.git
+sudo rm /usr/share/odooext-OCA-maintenance -R
+sudo mv pos /usr/share/odooext-OCA-maintenance
 
 # mis-builder
 git clone -b 12.0 git@github.com:OCA/mis-builder.git
 sudo rm /usr/share/odooext-OCA-project -R
 sudo mv mis-builder /usr/share/odooext-OCA-mis-builder
 
+# project
 git clone -b 12.0 git@github.com:OCA/project.git
 sudo rm /usr/share/odooext-OCA-project -R
 sudo mv project /usr/share/odooext-OCA-project
+
+# pos
+git clone -b 12.0 git@github.com:OCA/pos.git
+sudo rm /usr/share/odooext-OCA-pos -R
+sudo mv pos /usr/share/odooext-OCA-pos
 
 # reporting-engine
 git clone -b 12.0 git@github.com:OCA/reporting-engine.git
 sudo rm /usr/share/odooext-OCA-reporting-engine -R
 sudo mv reporting-engine /usr/share/odooext-OCA-reporting-engine
-
 
 # odooext-oca-server-backend
 git clone -b 12.0 git@github.com:OCA/server-backend.git
@@ -59,15 +76,6 @@ sudo rm /usr/share/odooext-OCA-website -R
 sudo mv website /usr/share/odooext-OCA-website
 
 # * * * * * * * * * * * * * * * * * * * * * * * * *
-# knowledge
-git clone -b 12.0 git@github.com:OCA/knowledge.git
-sudo rm /usr/share/odooext-OCA-knowledge -R
-sudo mv knowledge /usr/share/odooext-OCA-knowledge
-
-# pos
-git clone -b 12.0 git@github.com:OCA/pos.git
-sudo rm /usr/share/odooext-OCA-pos -R
-sudo mv pos /usr/share/odooext-OCA-pos
 
 
 
