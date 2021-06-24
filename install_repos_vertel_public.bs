@@ -53,9 +53,9 @@ sudo mv odoo-hr /usr/share/odoo-hr
 git clone -b 10.0 git@github.com:vertelab/odoo-imagemagick.git
 sudo rm /usr/share/odoo-imagemagick -R
 sudo mv odoo-imagemagick /usr/share/odoo-imagemagick
-sudo apt-get install libmagickwand-dev
-sudo pip install Wand
-sudo apt-get install python-wand
+#sudo apt-get install libmagickwand-dev
+#sudo pip install Wand
+#sudo apt-get install python-wand
 
 git clone -b master10 git@github.com:vertelab/odoo-knowledge-extra.git
 sudo rm /usr/share/odoo-knowledge-extra -R
