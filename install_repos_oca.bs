@@ -125,6 +125,10 @@ sudo mv management-system /usr/share/odooext-OCA-management-system
 
 # helpdesk -- ok
 
+# sale workflow
+git clone -b 12.0 git@github.com:OCA/sale-workflow.git
+sudo rm /usr/share/odooext-OCA-sale-workflow -R
+sudo mv sale-workflow /usr/share/odooext-OCA-sale-workflow
 
 
 # sudo pip3 install phonenumbers
