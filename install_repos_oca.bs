@@ -76,6 +76,54 @@ sudo rm /usr/share/odooext-OCA-website -R
 sudo mv website /usr/share/odooext-OCA-website
 
 # * * * * * * * * * * * * * * * * * * * * * * * * *
+## FIELD-SERVICE
+git clone -b 12.0 git@github.com:OCA/field-service.git
+sudo rm /usr/share/odooext-OCA-field-service -R
+sudo mv field-service /usr/share/odooext-OCA-field-service
+
+# /oca_dependencies.txt
+# account-analytic
+git clone -b 12.0 git@github.com:OCA/account-analytic.git
+sudo rm /usr/share/odooext-OCA-account-analytic -R
+sudo mv account-analytic /usr/share/odooext-OCA-account-analytic
+
+# account-invoice-reporting
+git clone -b 12.0 git@github.com:OCA/account-invoice-reporting.git
+sudo rm /usr/share/odooext-OCA-account-invoice-reporting -R
+sudo mv account-invoice-reporting /usr/share/odooext-OCA-account-invoice-reporting
+
+# contract
+git clone -b 12.0 git@github.com:OCA/contract.git
+sudo rm /usr/share/odooext-OCA-contract -R
+sudo mv contract /usr/share/odooext-OCA-contract
+
+# geospatial
+git clone -b 12.0 git@github.com:OCA/geospatial.git
+sudo rm /usr/share/odooext-OCA-geospatial -R
+sudo mv geospatial /usr/share/odooext-OCA-geospatial
+
+# hr
+git clone -b 12.0 git@github.com:OCA/hr.git
+sudo rm /usr/share/odooext-OCA-hr -R
+sudo mv hr /usr/share/odooext-OCA-hr
+
+# partner-contact
+git clone -b 12.0 git@github.com:OCA/partner-contact.git
+sudo rm /usr/share/odooext-OCA-partner-contact -R
+sudo mv partner-contact /usr/share/odooext-OCA-partner-contact
+
+# stock-logistics-warehouse
+git clone -b 12.0 git@github.com:OCA/stock-logistics-warehouse.git
+sudo rm /usr/share/odooext-OCA-stock-logistics-warehouse -R
+sudo mv stock-logistics-warehouse /usr/share/odooext-OCA-stock-logistics-warehouse
+
+# web -- ok!
+# management-system
+git clone -b 12.0 git@github.com:OCA/management-system.git
+sudo rm /usr/share/odooext-OCA-management-system -R
+sudo mv management-system /usr/share/odooext-OCA-management-system
+
+# helpdesk -- ok
 
 
 
