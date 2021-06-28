@@ -5,6 +5,6 @@
 # Make it as a bash-file!
 # bash install.bs
 
-git clone -b 12.0 git@github.com:vertelab/odoo-account.git
+git clone -b 13.0 git@github.com:vertelab/odoo-account.git
 sudo rm /usr/share/odoo-account -R
 sudo mv odoo-account /usr/share/odoo-account
