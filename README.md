@@ -14,6 +14,13 @@ git config --get remote.origin.url
 
 * * * * * *
 
+for req in `ls /usr/share/odoo*/requirements.txt`
+do 
+	sudo pip install -r $req
+done
+
+* * * * * *
+
 error: cannot open .git/FETCH_HEAD: Permission denied
 
 jakob@tessan:/usr/share$ sudo adduser jakob odoo
