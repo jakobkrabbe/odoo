@@ -4,6 +4,10 @@
 # Make it as a bash-file!
 # bash install.bs
 
+# When installing Field-Service, an error will occur.
+# Solution:
+# sudo apt install postgresql-10-postgis-2.4
+
 # crm
 git clone -b 12.0 git@github.com:OCA/crm.git
 sudo rm /usr/share/odooext-OCA-crm -R
@@ -76,6 +80,10 @@ sudo rm /usr/share/odooext-OCA-website -R
 sudo mv website /usr/share/odooext-OCA-website
 
 # * * * * * * * * * * * * * * * * * * * * * * * * *
+# When installing Field-Service, an error will occur.
+# Solution:
+# sudo apt install postgresql-10-postgis-2.4
+
 ## FIELD-SERVICE
 git clone -b 12.0 git@github.com:OCA/field-service.git
 sudo rm /usr/share/odooext-OCA-field-service -R
