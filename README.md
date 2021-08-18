@@ -33,3 +33,19 @@ Connection to tessan closed.
 jakob@jango-fett:~$ ssh tessan
 
 ```
+
+```
+#!/bin/bash
+# 2021-08-18 - Automated sudo update
+# To execute this simple script, write in Terminal: $ bash update_script.bs
+
+sudo apt-get update -y
+sudo apt-get upgrade -y
+sudo apt-get autoclean -y
+sudo apt-get autoremove -y
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt autoclean -y
+sudo apt autoremove -y
+sudo reboot
+```
