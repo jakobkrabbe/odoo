@@ -14,11 +14,11 @@ git config --get remote.origin.url
 
 * * * * * *
 # IF ERROR REMAINS...! DO THE PIP / PIP3 INSTALL! :-)
-# ODOOTOOLS 
+# https://github.com/vertelab/odootools/blob/14.0/repos/allrequirements
 
 for req in `ls /usr/share/odoo*/requirements.txt`
 do 
-	sudo pip install -r $req
+	sudo pip3 install -r $req
 done
 
 * * * * * *
