@@ -13,6 +13,8 @@ git remote show origin
 git config --get remote.origin.url
 
 * * * * * *
+# IF ERROR REMAINS...! DO THE PIP / PIP3 INSTALL! :-)
+# ODOOTOOLS 
 
 for req in `ls /usr/share/odoo*/requirements.txt`
 do 
