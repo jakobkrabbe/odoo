@@ -87,5 +87,10 @@ root@fossa:~# crontab -l
 ## EDIT
 root@fossa:~# crontab -e
 
+## Daily
+50 7 * * * /root/weekly_update.bs
+## Weekly (Sunday)
+50 7 * * 0 /root/weekly_update.bs
+
 ```
 
