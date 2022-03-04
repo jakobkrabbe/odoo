@@ -74,5 +74,12 @@ echo "Weekly log // cleaner" >> $strLog$dteNow
 (sudo apt-get autoremove -y) >> $strLog$dteNow
 # sudo reboot
 
+
+## Settiings:
+https://crontab.guru/#50_7_*_*_*
+
+## Cron Jobs For Beginners | Linux Task Scheduling
+https://www.youtube.com/watch?v=v952m13p-b4
+
 ```
 
