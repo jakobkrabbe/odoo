@@ -68,10 +68,10 @@ echo "Weekly log // cleaner" >> $strLog$dteNow
 (sudo apt-get upgrade -y) >> $strLog$dteNow
 (sudo apt-get autoclean -y) >> $strLog$dteNow
 (sudo apt-get autoremove -y) >> $strLog$dteNow
-(sudo apt-get update -y) >> $strLog$dteNow
-(sudo apt-get upgrade -y) >> $strLog$dteNow
-(sudo apt-get autoclean -y) >> $strLog$dteNow
-(sudo apt-get autoremove -y) >> $strLog$dteNow
+(sudo apt update -y) >> $strLog$dteNow
+(sudo apt upgrade -y) >> $strLog$dteNow
+(sudo apt autoclean -y) >> $strLog$dteNow
+(sudo apt autoremove -y) >> $strLog$dteNow
 # sudo reboot
 
 
