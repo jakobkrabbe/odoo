@@ -81,5 +81,11 @@ https://crontab.guru/#50_7_*_*_*
 ## Cron Jobs For Beginners | Linux Task Scheduling
 https://www.youtube.com/watch?v=v952m13p-b4
 
+## FIRST
+root@fossa:~# crontab -l
+
+## EDIT
+root@fossa:~# crontab -e
+
 ```
 
