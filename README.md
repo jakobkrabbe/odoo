@@ -51,22 +51,28 @@ sudo apt autoclean -y
 sudo apt autoremove -y
 # sudo reboot
 ```
-
 ```
+## IMPORTANT!!
+root@fossa:~# cd /var/log/
+root@fossa:/var/log# mkdir weeklylog
+
+
 #!/bin/bash
 # 2022-03-04 - Automated sudo update
 # To execute this simple script, write in Terminal: $ bash update_script.bs
 
 dteNow=$(date +"%Y-%m-%d.sudo.txt")
-echo "Weekly log // cleaner" >> $dteNow
-(sudo apt-get update -y) >> $dteNow
-(sudo apt-get upgrade -y) >> $dteNow
-(sudo apt-get autoclean -y) >> $dteNow
-(sudo apt-get autoremove -y) >> $dteNow
-(sudo apt-get update -y) >> $dteNow
-(sudo apt-get upgrade -y) >> $dteNow
-(sudo apt-get autoclean -y) >> $dteNow
-(sudo apt-get autoremove -y) >> $dteNow
+strLog=/var/log/weeklylog/
+echo "Weekly log // cleaner" >> $strLog$dteNow
+(sudo apt-get update -y) >> $strLog$dteNow
+(sudo apt-get upgrade -y) >> $strLog$dteNow
+(sudo apt-get autoclean -y) >> $strLog$dteNow
+(sudo apt-get autoremove -y) >> $strLog$dteNow
+(sudo apt-get update -y) >> $strLog$dteNow
+(sudo apt-get upgrade -y) >> $strLog$dteNow
+(sudo apt-get autoclean -y) >> $strLog$dteNow
+(sudo apt-get autoremove -y) >> $strLog$dteNow
 # sudo reboot
+
 ```
 
