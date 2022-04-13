@@ -1,16 +1,15 @@
 # Odoo
-My Odoo files and notes
-
-Look in every branch, to download projects.
-
-` some code`
-
 ```
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
 
+## ORIGIN
 git remote show origin
 git config --get remote.origin.url
+
+krajak@odooutv14:/usr/share/odooext-cybro-OpenHRMS-fix$ git remote -v
+origin	git@github.com:vertelab/odooext-cybro-OpenHRMS-fix.git (fetch)
+origin	git@github.com:vertelab/odooext-cybro-OpenHRMS-fix.git (push)
 
 * * * * * *
 # IF ERROR REMAINS...! DO THE PIP / PIP3 INSTALL! :-)
