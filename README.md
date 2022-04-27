@@ -3,6 +3,9 @@
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
 
+sudo rm -rf /usr/share/core-odoo/addons/l10n_se
+sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr/ 
+
 ## ORIGIN
 git remote show origin
 git config --get remote.origin.url
