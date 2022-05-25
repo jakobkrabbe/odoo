@@ -7,6 +7,10 @@ sudo chmod g+w /usr/share/odoo*/ -R
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 
+## MANIFEST-CTRL
+1. $ git clone git@github.com:beremavertel/setup.git
+2. krabban@server:/usr/share/project$ python3 ~/setup/scripts/check_manifests.py -t
+
 ## ORIGIN
 git remote show origin
 git config --get remote.origin.url
