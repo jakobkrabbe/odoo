@@ -4,6 +4,7 @@ https://github.com/beremavertel/setup
 odooallrequirements
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
+sudo chown 125:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
 
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se
