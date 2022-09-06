@@ -12,6 +12,7 @@ sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 
 ## MANIFEST-CHECKER
 1. $ git clone git@github.com:beremavertel/setup.git
+2. jakob@marina:/usr/share/project$ python3 ~/odootools/scripts/odoocheckdeps.py -t
 2. krabban@server:/usr/share/project$ python3 ~/setup/scripts/check_manifests.py -t
 
 ## ORIGIN
