@@ -10,6 +10,15 @@ sudo chmod g+w /usr/share/odoo*/ -R
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 
+
+* * * * * * *
+jakob@marina:/usr/share/odoo-project$ 
+grep -sR "'name':" */*__.py
+grep -sR "'version':" */*__.py
+grep -sR "'category':" */*__.py
+
+* * * * * *
+
 ## MANIFEST-CHECKER
 1. $ git clone git@github.com:beremavertel/setup.git
 2. jakob@marina:/usr/share/project$ python3 ~/odootools/scripts/odoocheckdeps.py -t
