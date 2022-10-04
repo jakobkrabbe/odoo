@@ -16,6 +16,9 @@ jakob@marina:/usr/share/odoo-project$
 grep -sR "'name':" */*__.py
 grep -sR "'version':" */*__.py
 grep -sR "'category':" */*__.py
+grep -sR "'summary':" */*__.py
+grep -sR "'description':" */*__.py
+
 
 * * * * * *
 
