@@ -40,7 +40,7 @@ origin	git@github.com:vertelab/odooext-cybro-OpenHRMS-fix.git (push)
 # https://github.com/vertelab/odootools/blob/14.0/repos/allrequirements
 
 for req in `ls /usr/share/odoo*/requirements.txt`
-do 
+do
 	sudo pip3 install -r $req
 done
 
@@ -64,14 +64,14 @@ jakob@jango-fett:~$ ssh tessan
 # 2021-08-18 - Automated sudo update
 # To execute this simple script, write in Terminal: $ bash update_script.bs
 
-sudo apt-get update -y
-sudo apt-get upgrade -y
-sudo apt-get autoclean -y
-sudo apt-get autoremove -y
-sudo apt update -y
-sudo apt upgrade -y
-sudo apt autoclean -y
-sudo apt autoremove -y
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get autoclean
+sudo apt-get autoremove
+sudo apt update
+sudo apt upgrade
+sudo apt autoclean
+sudo apt autoremove
 # sudo reboot
 ```
 ```
