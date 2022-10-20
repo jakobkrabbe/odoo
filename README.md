@@ -10,6 +10,12 @@ sudo chmod g+w /usr/share/odoo*/ -R
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 
+* * * * * * *
+
+The following packages have been kept back:
+  sosreport
+0 upgraded, 0 newly installed, 0 to remove and 1 not upgraded.
+krajak@hugo:~$ sudo apt install sosreport --fix-broken
 
 * * * * * * *
 jakob@marina:/usr/share/odoo-project$ 
