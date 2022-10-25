@@ -10,6 +10,8 @@ sudo chmod g+w /usr/share/odoo*/ -R
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 
+$ git remote get-url origin
+
 * * * * * * *
 
 The following packages have been kept back:
