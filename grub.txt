@@ -1,6 +1,7 @@
 https://phoenixnap.com/kb/grub-rescue
 
-1. ls [partition-name]
+1. ls
+expecter output: (proc) (hd0) (hd0,gpt2) (hd0gpt1) 
 2. set root=(hd0,msdos1)
 3. insmod normal
 4. normal 
