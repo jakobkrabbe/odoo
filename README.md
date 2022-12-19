@@ -29,6 +29,7 @@ grep -sR "'description':" */*__.py
 
 2022-11-25
 grep -r "Expire:" /srv/backup/fossa/*/summary
+grep -r "communication_center_massmail_meeting"
 
 * * * * * *
 
