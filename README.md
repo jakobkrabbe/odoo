@@ -31,6 +31,12 @@ grep -sR "'description':" */*__.py
 grep -r "Expire:" /srv/backup/fossa/*/summary
 grep -r "communication_center_massmail_meeting"
 
+## FIND LATEST COMPLETE PROJECT
+odoo-website-sale/website_sale_product_variant/static/description/notes.txt:2022-12-08
+odoo-website-sale/website_sale_terms/static/description/notes.txt:2022-12-08
+jakob@marina:/usr/share$ grep -r "2022-12-*" odoo-*/*/static/description/notes.txt
+
+
 * * * * * *
 
 ## MANIFEST-CHECKER
