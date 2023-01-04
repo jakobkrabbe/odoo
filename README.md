@@ -77,10 +77,6 @@ jakob@jango-fett:~$ ssh tessan
 ```
 
 ```
-#!/bin/bash
-# 2021-08-18 - Automated sudo update
-# To execute this simple script, write in Terminal: $ bash update_script.bs
-
 sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get autoclean
