@@ -12,6 +12,10 @@ sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 $ git remote get-url origin
 
 * * * * * * *
+Läser paketlistor… Färdig
+Bygger beroendeträd… Färdig
+Läser tillståndsinformation… Färdig
+4 paket kan uppgraderas. Kör ”apt list --upgradable” för att se dem.
 
 The following packages have been kept back:
   sosreport
