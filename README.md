@@ -30,6 +30,7 @@ grep -sR "'version':" */*__.py
 grep -sR "'category':" */*__.py
 grep -sR "'summary':" */*__.py
 grep -sR "'description':" */*__.py
+grep -sR "'depends':" */*__.py
 
 2022-11-25
 grep -r "Expire:" /srv/backup/fossa/*/summary
