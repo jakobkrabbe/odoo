@@ -32,6 +32,7 @@ grep -sR "'summary':" */*__.py
 grep -sR "'description':" */*__.py
 grep -sR "'depends':" */*__.py
 grep -sR "'website':" */*__.py
+ls | wc -l
 grep -sR "'website':" */*__.py | tr "'" " "
 
 2022-11-25
