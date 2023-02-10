@@ -1,0 +1,10 @@
+jakob@marina:/usr/share/odoo-website$ grep -sR "'description':" */*__.py -n | grep "29"
+website_page_menu_form_view/__manifest__.py:29:    'description': """
+website_portal_access/__manifest__.py:29:    'description': """
+website_portal_actions/__manifest__.py:29:    'description': """
+jakob@marina:/usr/share/odoo-website$ grep -sR "'description':" */*__.py -n | grep "40"
+jakob@marina:/usr/share/odoo-website$ cd ..
+jakob@marina:/usr/share$ grep -sR "'description':" */*/*__.py -n | grep "40"
+odoo-l10n_se_payroll/l10n_se_hr_payroll/__manifest__.py:40:    'description': """
+odoo-project_scrum/project_scrum/__manifest__.py:40:    'description': """
+jakob@marina:/usr/share$ 
