@@ -30,6 +30,7 @@ grep -sR "'version':" */*__.py
 grep -sR "'category':" */*__.py
 grep -sR "'summary':" */*__.py
 grep -sR "'description':" */*__.py
+grep -sR "'description':" */*/*__.py -n | grep "40"
 grep -sR "'depends':" */*__.py
 grep -sR "'website':" */*__.py
 ls | wc -l
