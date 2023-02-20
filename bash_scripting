@@ -14,3 +14,21 @@ website_portal_actions/__manifest__.py:29:    'description': """
 jakob@marina:/usr/share$ grep -sR "'description':" */*/*__.py -n | grep "40"
 odoo-l10n_se_payroll/l10n_se_hr_payroll/__manifest__.py:40:    'description': """
 odoo-project_scrum/project_scrum/__manifest__.py:40:    'description': """
+
+
+* * * * * * * * * * * * * * * * 
+
+jakob@nella:~$ exec bash
+jakob@nella:~$ for req in `ls`; do echo $req; done
+apt_install.bs
+apt_list.txt
+bash_script.bs
+l10n_se
+l10n_se_ocr
+odoocheckout14.bs
+odoogitpull.err
+odootools
+src
+text.bs
+upgrade_db_file.bs
+jakob@nella:~$ 
