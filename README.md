@@ -32,6 +32,7 @@ grep -sR "'summary':" */*__.py
 grep -sR "'description':" */*__.py
 grep -sR "'description':" */*/*__.py -n | grep "40"
 grep -sR "'depends':" */*__.py
+grep -sR "'repository':" */*__.py
 grep -sR "'website':" */*__.py
 ls | wc -l
 grep -sR "'website':" */*__.py | tr "'" " "
