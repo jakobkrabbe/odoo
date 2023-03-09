@@ -11,6 +11,9 @@ sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 
 $ git remote get-url origin
 
+odoogitclone odoo-stock
+git config --global --add safe.directory /usr/share/odoo-stock
+
 * * * * * * *
 Läser paketlistor… Färdig
 Bygger beroendeträd… Färdig
