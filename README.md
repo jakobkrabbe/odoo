@@ -42,6 +42,7 @@ grep -sR "'website':" */*__.py | tr "'" " "
 
 Find the latest project to copy / paste:
 grep -r "2023-03-*" odoo-*/*/static/description/notes.txt
+grep -r "2023-*" */static/description/notes.txt
 
 2022-11-25
 grep -r "Expire:" /srv/backup/fossa/*/summary
