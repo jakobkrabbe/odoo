@@ -95,15 +95,32 @@ jakob@jango-fett:~$ ssh tessan
 ```
 
 ```
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get autoclean
-sudo apt-get autoremove
-sudo apt update
-sudo apt upgrade
-sudo apt autoclean
-sudo apt autoremove
-# sudo reboot
+*** System restart required ***
+Last login: Wed Feb 14 10:01:14 2024 from 176.10.242.63
+krajak@burns:~$ id
+uid=1113(krajak) gid=1115(krajak) groups=1115(krajak),121(odoo),1107(sudo),1108(odoo)
+krajak@burns:~$ sudo nano /etc/group
+
+>> logout >> login
+
+krajak@burns:~$ id
+uid=1113(krajak) gid=1115(krajak) groups=1115(krajak),1107(sudo),1108(odoo)
+
+
+krajak@burns:/usr/share$ ls -ld odoo*
+drwxrwxr-x  53 odoo 121  4096 Feb  8 13:01 odoo-account
+drwxrwxrwx   4 odoo 121  4096 Feb  4  2022 odoo-auth
+drwxrwxr-x  37 odoo 121  4096 Aug 28 08:05 odoo-base
+
+krajak@burns:/usr/share$ sudo chgrp odoo odoo* -R
+
+krajak@burns:/usr/share$ ls -ld odoo*
+drwxrwxr-x  53 odoo odoo  4096 Feb  8 13:01 odoo-account
+drwxrwxrwx   4 odoo odoo  4096 Feb  4  2022 odoo-auth
+drwxrwxr-x  37 odoo odoo  4096 Aug 28 08:05 odoo-base
+
+krajak@burns:/usr/share$ sudo chgrp odoo odoo* -R
+
 ```
 ```
 ## IMPORTANT!!
