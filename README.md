@@ -9,6 +9,21 @@ sudo chmod g+w /usr/share/odoo*/ -R
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se
 sudo rm -rf /usr/share/core-odoo/addons/l10n_se_ocr
 
+
+jakob@fossa:/usr/share/odoo-event$ git pull
+error: cannot open .git/FETCH_HEAD: Permission denied
+jakob@fossa:/usr/share/odoo-event$ id 
+uid=1000(jakob) gid=1000(jakob) groups=1000(jakob),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),110(lxd)
+
+
+krajak@fossa:~$ ls -ld /usr/share/
+drwxr-xr-x 148 root root 4096 maj  7 09:39 /usr/share/
+krajak@fossa:~$ sudo chown root:odoo /usr/share/
+krajak@fossa:~$ sudo chmod g+w /usr/share/
+krajak@fossa:~$ ls -ld /usr/share/
+drwxrwxr-x 148 root odoo 4096 maj  7 09:39 /usr/share/
+
+
 $ git remote get-url origin
 
 odoogitclone odoo-stock
