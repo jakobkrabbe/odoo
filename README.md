@@ -33,6 +33,10 @@ $ git remote get-url origin
 odoogitclone odoo-stock
 git config --global --add safe.directory /usr/share/odoo-stock
 
+
+# odoo log rotate <br>
+https://www.odoo.com/forum/help-1/why-logrotate-functionality-is-removed-in-odoo13-1891321
+
 * * * * * * *
 Läser paketlistor… Färdig
 Bygger beroendeträd… Färdig
