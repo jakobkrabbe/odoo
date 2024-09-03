@@ -6,7 +6,7 @@ odooallrequirements
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
 
-sudo chmod og+w static/description/banner.png
+sudo chmod og+w */static/description/banner.png
 
 $ git add --ignore-errors .
 
