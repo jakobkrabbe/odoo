@@ -8,6 +8,10 @@ sudo chmod g+w /usr/share/odoo*/ -R
 
 sudo chmod og+w */static/description/banner.png
 Unexpected errors sometimes occurs, then set the correct permissions!
+sudo chmod 664 /usr/share/*/*/static/description/*.png
+sudo chmod 664 /usr/share/*/*/static/description/*.svg
+
+
 sudo chmod 664 /usr/share/*/*/static/description/banner.png
 sudo chmod 664 /usr/share/*/*/static/description/icon.png
 sudo chmod 775 i18n -R
