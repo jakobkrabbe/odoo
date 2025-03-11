@@ -1,7 +1,7 @@
 # Odoo <br>
 https://github.com/beremavertel/setup
 ```
-odooallrequirements
+odooallrequirements | odooreqclone
 
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
