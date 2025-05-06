@@ -8,7 +8,8 @@ sudo chmod g+w /usr/share/odoo*/ -R
 
 
 Paula- Odoo 18
-sudo apt install pci.ids python3-software-properties software-properties-common ubuntu-drivers-common --fix-broken
+sudo apt install pci.ids python3-software-properties software-properties-common
+ubuntu-drivers-common --fix-broken
 
 
 
