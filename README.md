@@ -6,6 +6,12 @@ odooallrequirements | odooreqclone
 sudo chown odoo:odoo /usr/share/odoo*/ -R
 sudo chmod g+w /usr/share/odoo*/ -R
 
+
+Paula- Odoo 18
+sudo apt install pci.ids python3-software-properties software-properties-common ubuntu-drivers-common --fix-broken
+
+
+
 sudo chmod og+w */static/description/banner.png
 Unexpected errors sometimes occurs, then set the correct permissions!
 sudo chmod 664 /usr/share/*/*/static/description/*.png
